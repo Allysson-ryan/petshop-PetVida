@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/src/page/login.css">
+</head>
+
+<body>
+    <div class="containerLogin">
+        <div class="box-loginSection">
+            <header>
+                <div class="containerTitleLogin">
+                    <span> Entrar </span>
+                </div>
+                <a href="/index.html">
+                    <div class="icon-fechar">
+                        <img src="../../assets/icons/cruz.png" alt="fechar icon">
+                    </div>
+                </a>
+            </header>
+
+            <form>
+                <div class="container-informacoesLogin">
+                    <div class="container-email">
+                        <label for="email">email</label>
+                        <div class="box-inputEmail">
+                            <input type="email" name="email" placeholder="Digite seu email">
+                        </div>
+                    </div>
+                    <div class="container-senha">
+                        <label for="senha">senha</label>
+                        <div class="box-inputSenha">
+                            <input type="password" name="senha" placeholder="Digite sua senha">
+                        </div>
+                    </div>
+                    <div class="containerBtnsLogin">
+                        <div class="btnContinuarLogin">
+                            <button type="button">Entrar</button>
+                        </div>
+                        <div class="box-btnsLinks">
+                            <div class="btnRedefinirSenha">
+                                <a href="#">
+                                    <button type="button">Redefinir senha</button>
+                                </a>
+                            </div>
+                            <div class="btnRegistrar">
+                                <a href="/src/page/registrar.html">
+                                    <button type="button">Registre-se</button>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <div class="container-outrasFormaslogin">
+                <div class="box-titleOutrasFormaslogin">
+                    <span class="left"></span>
+                    <label class="tile-outrasFormaslogin">Acesso rápido com</label>
+                    <span class="right"></span>
+                </div>
+                <div class="box-outrasFormaslogin">
+                    <div class="box-googleLogin">
+                        <button style="background: none; border: none; cursor: pointer;">
+                            <img src="/assets/icons/google-logo.png" alt="google icon">
+                        </button>
+                    </div>
+                    <div class="facebookLogin">
+                        <button style="background: none; border: none; cursor: pointer;">
+                            <img src="/assets/icons/facebook-icon.png" alt="facebook icon">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

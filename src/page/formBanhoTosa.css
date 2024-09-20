@@ -1,0 +1,613 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+body {
+    background-color: #ffff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-Formulario {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*---header---*/
+header {
+    width: 100%;
+    height: 50px;
+}
+
+header a {
+    text-decoration: none;
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+}
+
+.icon-fechar {
+    padding: 20px;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.icon-fechar p {
+    color: #000000;
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.icon-fechar img {
+    width: 15px;
+}
+
+/*------=======Formulário 1=======------*/
+.formulario-1 {
+    width: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    margin-left: 9rem;
+}
+
+.formulario-1 form {
+    padding: 20px;
+}
+
+#meuFormulario h4 {
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+}
+
+/*=======Dados do tutor=======*/
+#meuFormulario label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.container-input-nomeTutor,
+.container-input-nomeAnimal {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+
+.box-input-nomeTutor,
+.box-input-nomeAnimal {
+    border: 1.5px solid #c5c5c5;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.box-input-nomeTutor input,
+.box-input-nomeAnimal input {
+    width: 100%;
+    padding: 15px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+/*=======Dados do Animal=======*/
+.contatos-tutor {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 12px;
+}
+
+.box-input-email {
+    border: 1.5px solid #c5c5c5;
+    width: 15rem;
+    border-radius: 5px;
+}
+
+.box-input-telefone {
+    border: 1.5px solid #c5c5c5;
+    border-radius: 5px;
+}
+
+.box-input-email input,
+.box-input-telefone input {
+    width: 100%;
+    padding: 15px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+.tipo-animal {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+.escolha-de-raca {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.dog-options,
+.cat-options {
+    display: none;
+}
+
+.escolha-de-raca option {
+    height: 30px;
+}
+
+.hide {
+    display: block;
+}
+
+/*--BANHO--*/
+.box-banho {
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1.5px solid #000000;
+    border-radius: 15px;
+    margin-top: 2rem;
+}
+
+.container-left-banho {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.procedimento {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.procedimento h1 {
+    font-size: 15px;
+    display: flex;
+    justify-content: start;
+    margin-bottom: 8px;
+    margin-top: 10px;
+}
+
+.tempo-do-procedimento {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 10px;
+}
+
+.tempo-do-procedimento img {
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    margin-left: 6px;
+}
+
+.tempo-estimado,
+.unidade-de-tempo {
+    font-size: 13px;
+}
+
+.container-adicionar-servico img {
+    width: 20px;
+}
+
+.container-right-banho {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*--AVISO--*/
+.box-aviso {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.aviso {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 90%;
+    height: 2.5rem;
+    background: #d8d8d8;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.aviso img {
+    width: 15px;
+    margin: 0px 20px;
+}
+
+.aviso p {
+    font-size: 13px;
+    margin-right: 15px;
+}
+
+/*=======TONALIZANTE=======*/
+.title-tonalizante {
+    width: 88%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 30px;
+}
+
+.title-tonalizante img {
+    width: 17px;
+    margin-right: 4px;
+}
+
+.title-tonalizante h4 {
+    font-size: 17px;
+}
+
+.box-tonalizante {
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1.5px solid #000000;
+    border-radius: 15px;
+    margin-bottom: 12px;
+}
+
+.container-adicionar-servico {
+    padding: 30px;
+}
+
+.btn-add-servico {
+    background: none;
+    border: none;
+}
+
+/*=======TOSA=======*/
+.container-tosa {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-tosa {
+    width: 88%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 4px;
+}
+
+.title-tosa img {
+    width: 17px;
+    margin-right: 3px;
+}
+
+.title-tosa h4 {
+    font-size: 17px;
+}
+
+.box-tosa {
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1.5px solid #000000;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.container-left-tosa {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.container-right-tosa {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.service-price {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.container-adicionar-servico {
+    padding: 30px;
+}
+
+.btn-add-servico {
+    background: none;
+    border: none;
+}
+
+
+/*=======Calendário=======*/
+.calendario {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 250px; /* Ajustar largura do calendário para ser mais compacto */
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.title-calendar {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px; /* Reduzir padding para menos espaço */
+    justify-content: space-between;
+}
+
+.title-calendar .icons {
+    display: flex;
+}
+
+.title-calendar .icons span {
+    height: 28px; /* Ajustar tamanho dos ícones para ser mais compacto */
+    width: 28px;
+    margin: 0 5px; /* Aumentar espaçamento entre os ícones */
+    cursor: pointer;
+    color: #000; /* Tornar o ícone preto */
+    text-align: center;
+    line-height: 28px; /* Alinhar o texto no centro */
+    font-size: 1.2rem; /* Reduzir o tamanho da fonte */
+    user-select: none;
+    border-radius: 50%;
+}
+
+.title-calendar .icons span:hover {
+    background: #f0f0f0; /* Ajustar cor de hover */
+}
+
+.title-calendar .current-date {
+    font-size: 1rem; /* Ajustar tamanho da data para ser menor */
+    font-weight: 500;
+    color: #000; /* Tornar a cor da data preta */
+}
+
+.calendar {
+    padding: 10px; /* Reduzir padding do calendário */
+}
+
+.calendar ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+}
+
+.calendar .days {
+    margin-bottom: 10px; /* Reduzir margem inferior */
+}
+
+.calendar li {
+    color: #333;
+    width: calc(100% / 7);
+    font-size: 0.9rem; /* Ajustar tamanho da fonte dos dias */
+}
+
+.calendar .weeks li {
+    font-weight: 500;
+    cursor: default;
+    color: #b0b0b0; /* Tornar os dias da semana cinza */
+}
+
+.calendar .days li {
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+    margin-top: 10px; /* Reduzir espaçamento vertical entre os dias */
+}
+
+.calendar .days li.selecionado {
+    background-color: lightblue;
+}
+
+.days li.inactive {
+    color: #d0d0d0; /* Tornar dias inativos mais claros */
+}
+
+.days li.active {
+    color: #fff; /* Tornar o dia ativo com texto branco */
+}
+
+.days li::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    height: 30px; /* Ajustar o tamanho do círculo de fundo */
+    width: 30px;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.days li.active::before {
+    background: #008FFD; /* Cor de fundo azul para o dia ativo */
+}
+
+.days li:not(.active):hover::before {
+    background: #e0e0e0; /* Cor de fundo cinza claro para hover */
+}
+
+.days li:not(.active):hover::before {
+    background: #e0e0e0; /* Cor de fundo cinza claro para hover */
+}
+
+/*=======Horários=======*/
+.box-horarios {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.horarios select {
+    width: 20rem;
+    height: 30px;
+    border-radius: 8px;
+}
+
+/*=======Resumo do agendamento=======*/
+.container-resumoDoAgendamento {
+    width: 22.5rem;
+    max-height: 27rem;
+    background-color: #dbdbdb;
+    padding: 30px;
+    margin: 40px;
+}
+
+.title-resumoDoAgendamento {
+    font-size: 21px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 15px 15px 15px;
+}
+
+.container-detalhes {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+
+.titleDetalhes {
+    font-size: 13px;
+}
+
+.box-detalhe {
+    margin: 10px 15px 0px 15px;
+}
+
+.box-data-escolhida,
+.box-horario-escolhido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.datasEscolhida {
+    font-size: 15px;
+}
+
+.container-servicosAgendados {
+    margin-bottom: 12px;
+}
+
+.title-servicosAgendados {
+    font-size: 15px;
+    margin: 8px 0px;
+}
+
+.box-servicosAgendados, .box-servicosObrigatorio {
+    margin: 10px 12px 0px 12px;
+}
+
+.servicosAgendados{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.servicosAgendados h4, .name-servicosobrigatorio {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/*=======Valor da compra=======*/
+.container-valorTotalServicos {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(196, 196, 196);
+    padding: 10px;
+    margin-top: 1.5rem;
+    border-radius: 10px;
+}
+
+.title-resumoCompra {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.title-resumoCompra span {
+    font-size: 15px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantidadeItensCarrinho {
+    margin-left: 8px;
+}
+
+.valor-ResumoCompra {
+    font-size: 20px;
+    font-weight: 800;
+    margin-left: 5px;
+}
+
+
+/*=======Botão Agendar=======*/
+.box-btnFinalizar {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-btnFinalizar a {
+    direction: none;
+}
+
+.box-btnFinalizar button {
+    width: 8rem;
+    height: 1.7rem;
+    text-align: center;
+    border-radius: 15px;
+    border: none;
+    font-size: 14px;
+    font-weight: 720;
+    background: #f3f3f3;
+    color: #000000;
+    cursor: pointer;
+}

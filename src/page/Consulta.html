@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Consulta </title>
+
+    <link rel="stylesheet" href="../page/Consulta.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logomarca">
+                <a href="../../index.html">
+                    <img src="../../assets/img/PetVida-logomarca.png" alt="logomarca">
+                </a>
+            </div>
+
+            <div class="barraDePesquisa-container">
+                <div class="box-pesquisa">
+                    <div class="pesquisa">
+                        <input type="text" autocomplete="off" placeholder="Buscar produto" class="input-pesquisa">
+                    </div>
+                    <div class="button-pesquisa">
+                        <button>
+                            <img src="../../assets/icons/pesquisa-icon.png">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-entrarRegistrar" onmouseover="menuShow()" onmouseout="menuHide()">
+                <div class="usuario-icon">
+                    <img src="../../assets/icons/usuário-icon.png">
+                </div>
+
+                <div class="usuario-name">
+                    <p>Entrar/
+                        registrar</p>
+                </div>
+            </div>
+
+            <div class="containerCarrinhoCompra">
+                <div class="box-carrinhoDeCompra">
+                    <a href="./carrinho.html">
+                        <div class="carrinho-icon">
+                            <img src="../../assets/icons/carrinho-de-compra.png" alt="carrinho de compra">
+                        </div>
+                    </a>
+                </div>
+                <div aria-hidden="true" class="emblema-numerico-carrinho"> 0 </div>
+            </div>
+
+        </div>
+        <div class="links-entrarRegistrar">
+            <button class="btn-entrar">
+                <p>Entre</p>
+            </button>
+
+            <button class="btn-registrar">
+                <p>Registrar</p>
+            </button>
+        </div>
+    </header>
+
+    <!-----HOME----->
+    <div id="home-banhoTosa">
+        <div class="container-left-home">
+            <div class="navbar-banhoTosa">
+                <h1> Consultas </h1>
+                <h4> Tudo para manter a saúde do seu pet em dia </h4>
+                <div class="button-agendar">
+                    <a href="../page/formConsulta.html"> <Button> Agende agora </Button> </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-right-home">
+            <img src="../../assets/img/img serviços/veterinário.jpg" alt="Cachorro o banho">
+        </div>
+    </div>
+
+    <!--====Quando levar ao veterinário====-->
+    <div class="container-levarAoVeterinario">
+        <div class="box-laft-levarAoVeterinario">
+            <img src="../../assets/img/img serviços/gatoCachorro.png" alt="img veterinário com cachorro">
+        </div>
+        <div class="box-right-levarAoVeterinario">
+            <h1 class="titulo-levarAoVeterinario"> Quando levar o pet ao veterinário? </h1>
+
+            <ul>
+                <li>
+                    <div class="check-icon">
+                        <img src="../../assets/icons/check-icon.png" alt="check icon">
+                    </div>
+                    <p> Cuidados preventivos </p>
+                </li>
+                <li>
+                    <div class="check-icon">
+                        <img src="../../assets/icons/check-icon.png" alt="check icon">
+                    </div>
+                    <p> Diagnóstico precoce </p>
+                </li>
+                <li>
+                    <div class="check-icon">
+                        <img src="../../assets/icons/check-icon.png" alt="check icon">
+                    </div>
+                    <p> Vacinas e medicamentos </p>
+                </li>
+                <li>
+                    <div class="check-icon">
+                        <img src="../../assets/icons/check-icon.png" alt="check icon">
+                    </div>
+                    <p> Consultas de rotina </p>
+                </li>
+                <li>
+                    <div class="check-icon">
+                        <img src="../../assets/icons/check-icon.png" alt="check icon">
+                    </div>
+                    <p> Orientações de alimentação e higiene </p>
+                    </ç>
+            </ul>
+        </div>
+    </div>
+
+    <!--====Serviços mais procurados====-->
+    <div class="servicos-mais-procurados">
+        <h1> Serviços mais procurados </h1>
+        <div class="box-servicosProcurados">
+            <div class="servisos">
+                <div class="details">
+                    <img src="../../assets/icons/estetoscopio.png" alt="estetoscópio icon">
+                    <h4> Consulta </h4>
+                </div>
+            </div>
+
+            <div class="servisos">
+                <div class="details">
+                    <img src="../../assets/icons/seringa.png" alt="seringa icon">
+                    <h4> Vacinas </h4>
+                </div>
+            </div>
+
+            <div class="servisos">
+                <div class="details">
+                    <img src="../../assets/icons/bisturi.png" alt="bisturi icon">
+                    <h4> Castração </h4>
+                </div>
+            </div>
+
+            <div class="servisos">
+                <div class="details">
+                    <img src="../../assets/icons/aviao-alt.png" alt="avião icon">
+                    <h4> Atestado para viagens </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----Nosso instinto é cuidar----->
+    <section class="nosso-InstintoCuidar">
+        <div class="container-nossosAtendimentos">
+            <div class="title-nossosAtendimentos">
+                <h1 style="font-size: 40px; margin-top: 4rem;"> Nosso instinto é cuidar </h1>
+            </div>
+        </div>
+        <div class="container-servicoConsultorio">
+            <div class="box-servicoConsultorio" style="background: rgb(241, 247, 245);">
+                <div class="img-servicoConsultorio">
+                    <img src="../../assets/img/img serviços/consultorio-clinica.jpg" alt="img consultórios">
+                </div>
+                <div class="list-servicoConsultorio">
+                    <div class="title-listservicos">
+                        <img src="../../assets/icons/consultorio-icon.png" alt="consultorio icon"
+                            style="width: 25px; height: 25px;">
+                        <h4> Consultórios </h4>
+                    </div>
+                    <ul>
+                        <li> Exames de sangue e imagem </li>
+                        <li>Check-up e vacinas</li>
+                        <li>Clínico geral e especialidades</li>
+                        <li>Orientação para filhotes</li>
+                        <li>Microchipagem</li>
+                        <li>Curativos</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="box-servicoConsultorio"
+                style="background: linear-gradient(0deg, rgb(241, 235, 237), rgb(241, 235, 237)), rgb(255, 255, 255);">
+                <div class="img-servicoConsultorio">
+                    <img src="../../assets/img/img serviços/clinica-vet.jpg" alt="img consultórios">
+                </div>
+                <div class="list-servicoConsultorio">
+                    <div class="title-listservicos">
+                        <img src="../../assets/icons/clinica-icon.png" alt="clinica icon"
+                            style="width: 25px; height: 25px;">
+                        <h4> Clínicas </h4>
+                    </div>
+                    <div
+                        style="display: flex; flex-direction: row; -webkit-box-align: center; align-items: center; padding: 0.5rem 1rem; gap: 0.5rem; background: rgba(137, 54, 82, 0.08); border-radius: 0.5rem; width: 100%; height: auto; font-size: 0.875rem; line-height: 132%; color: rgb(69, 69, 69);">
+                        <img src="../../assets/icons/icone-de-mais.png" alt="mais icon" style="width: 20px;">
+                        <span style="font-weight: 800; margin-left: 10px;"> Serviços do Consultório </span>
+                    </div>
+
+                    <ul>
+                        <li>Aparelho para anestesia inalatória</li>
+                        <li>Cirurgias e internações de baixa e média complexidade</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="box-servicoConsultorio"
+                style="background: linear-gradient(0deg, rgb(247, 244, 255), rgb(247, 244, 255)), rgb(255, 255, 255);">
+                <div class="img-servicoConsultorio">
+                    <img src="../../assets/img/img serviços/hospital-veterinária.jpg" alt="img hospital">
+                </div>
+                <div class="list-servicoConsultorio">
+                    <div class="title-listservicos">
+                        <img src="../../assets/icons/icon-hospital.png" alt="" style="width: 25px; height: 25px;">
+                        <h4> Hospitais </h4>
+                    </div>
+                    <div
+                        style="display: flex; flex-direction: row; -webkit-box-align: center; align-items: center; padding: 0.5rem 1rem; gap: 0.5rem; background: rgba(137, 54, 82, 0.08); border-radius: 0.5rem; width: 100%; height: auto; font-size: 0.875rem; line-height: 132%; color: rgb(69, 69, 69);">
+                        <img src="../../assets/icons/icone-de-mais.png" alt="mais icon" style="width: 20px;">
+                        <span style="font-weight: 800; margin-left: 10px;"> Serviços da Clínica </span>
+                    </div>
+
+                    <ul class="">
+                        <li>Urgências e emergências</li>
+                        <li>Cirurgias de alta complexidade</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-----Conheça nossos serviços----->
+
+    <section class="conheçaNossosServicos">
+        <div class="title-nossosAtendimentos">
+            <h1 style="font-size: 40px; margin-top: 4rem;"> Conheça nossos serviços </h1>
+        </div>
+        <div class="container-conhecaNossosServisos">
+            <div class="box-left-conhecaNossosServisos">
+                <div class="title-listservicos">
+                    <img src="../../assets/icons/estetoscopio.png" alt="consultorio icon"
+                        style="width: 20px; height: 20px;">
+                    <h4> Consultas </h4>
+                </div>
+                <p>Prevenção ou tratamento de doenças.</p>
+            </div>
+        </div>
+
+        <div class="container-inforNossosServicos">
+            <div class="box-inforNossosServicos">
+                <h4 class="subtitulo-inforNossosServicos"> Preventivas </h4>
+                <p>Solicitação de check-ups, vacinação, análise de sintomas, microchipagem ou atendimento pediátrico.
+                </p>
+                <br>
+                <h4 class="subtitulo-inforNossosServicos"> Especialidades </h4>
+                <div class="list-especialidades" style="display: flex;">
+                    <ul>
+                        <li> Dermatologia </li>
+                        <li>Hematologia</li>
+                        <li>Nutrologia</li>
+                        <li>Oncologia</li>
+                        <li>Reabilitação</li>
+                        <li>Cirurgia</li>
+                        <li>Neurologia</li>
+                        <li>Oftalmologia</li>
+                    </ul>
+                    <ul>
+                        <li> Cardiologia </li>
+                        <li>Nefrologia e Urologia</li>
+                        <li>Odontologia</li>
+                        <li>Ortopedia</li>
+                        <li>Infectologia</li>
+                        <li>Endocrinologia</li>
+                        <li>Pneumologia</li>
+                        <li>Reprodução</li>
+                    </ul>
+                </div>
+                <br>
+                <h4 class="subtitulo-inforNossosServicos"> Atestado para viagens nacionais e internacionais </h4>
+                <p>Viagens nacionais: exame físico para emissão de atestado para permissão para gatos e cachorros.
+                    Viagens internacionais: exame físico e sorologia de raiva para emissão de atestado para permissão de
+                    cachorros e gatos.</p>
+                <br>
+                <h4 class="subtitulo-inforNossosServicos"> Avaliação gratuita para castração </h4>
+                <p> Anamnese, exame físico e encaminhamento de exames pré-operatórios.</p>
+                <br>
+                <h4 class="subtitulo-inforNossosServicos"> Consulta pediátrica </h4>
+                <ul>
+                    <li> Avaliação clínica e solicitação de check-up, quando necessário. </li>
+                    <li>Vacinação, diretrizes sobre nutrição e atividade física.</li>
+                    <li>Orientações de acordo com a raça do pet, estilo de vida e ambiente que vive.</li>
+                </ul>
+                <br>
+                <h4 class="subtitulo-inforNossosServicos"> Consulta de orientação</h4>
+                <ul>
+                    <li> Dúvidas de saúde, cuidados de prevenção e solicitação de exames. </li>
+                    <li>Prescrição de suplementos e medicações.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container-conhecaNossosServisos">
+            <div class="box-left-conhecaNossosServisos">
+                <div class="title-listservicos">
+                    <img src="../../assets/icons/seringa.png" alt="seringa icon" style="width: 20px; height: 20px;">
+                    <h4> Vacinas </h4>
+                </div>
+                <p>Prevenção de doenças.</p>
+            </div>
+        </div>
+        <div class="container-inforNossosServicos">
+            <div class="box-inforNossosServicos">
+                <h4 class="subtitulo-inforNossosServicos"> Múltiplas / Polivalentes para cachorros </h4>
+                <ul>
+                    <li> V7: Protege contra cinomose, hepatite infecciosa canina, parainfluenza, parvovirose e
+                        leptospirose (sorovares Canicola e Icterohaemorrhagiae). </li>
+                    <li>V10: Protege contra todas da V7 e mais coronavirose e outras cepas de leptospirose
+                        (Grippotyphosa e Pomona).</li>
+                </ul>
+                <br>
+                <h4 class="subtitulo-inforNossosServicos"> Múltiplas / Polivalentes para gatos </h4>
+                <ul>
+                    <li> V3: Protege contra panleucopenia e calicivirose. </li>
+                    <li>V4: Protege contra todas da V3 e mais clamidiose.</li>
+                    <li>V5: Protege contra todas da V4 e mais FeLV (leucemia felina).</li>
+                </ul>
+                <br>
+                <h4 class="subtitulo-inforNossosServicos"> Antirrábica (Raiva) </h4>
+                <p> Anamnese, exame físico e encaminhamento de exames pré-operatórios.</p>
+                <br>
+                <h4 class="subtitulo-inforNossosServicos"> Gripe Canina </h4>
+                <p> Protege contra algumas doenças infecciosas respiratórias transmitidas pelo contato entre animais
+                    infectados, através de aerossóis e objetos compartilhados, quando contaminados.</p>
+                <br>
+                <h4 class="subtitulo-inforNossosServicos"> Giardíase </h4>
+                <p> Estimula a proteção visando minimizar os sinais clínicos provocados pelo protozoário causador
+                    (Giárdia).</p>
+            </div>
+        </div>
+
+        <div class="container-conhecaNossosServisos">
+            <div class="box-left-conhecaNossosServisos">
+                <div class="title-listservicos">
+                    <img src="../../assets/icons/exames.png" alt="exame icon" style="width: 20px; height: 20px;">
+                    <h4> Exames </h4>
+                </div>
+                <p>Sangue, imagem, fezes e urina.</p>
+            </div>
+        </div>
+        <div class="container-inforNossosServicos">
+            <div class="box-inforNossosServicos">
+                <h4 class="subtitulo-inforNossosServicos"> Sangue, fezes e urina </h4>
+                <p> Hemograma, sorologias, exames bioquímicos, parasitológicos e moleculares.</p>
+                <br>
+                <h4 class="subtitulo-inforNossosServicos"> Exames de imagem </h4>
+                <p>Ultrassom, tomografia computadorizada, raio-x simples e com contraste.</p>
+                <br>
+                <h4 class="subtitulo-inforNossosServicos"> Exames cardiológicos </h4>
+                <p> Ecocardiograma e eletrocardiograma.</p>
+            </div>
+        </div>
+
+
+        <div class="container-conhecaNossosServisos">
+            <div class="box-left-conhecaNossosServisos">
+                <div class="title-listservicos">
+                    <img src="../../assets/icons/procedimento.png" alt="procedimento icon"
+                        style="width: 20px; height: 20px;">
+                    <h4> Procedimentos </h4>
+                </div>
+                <p>Atendimento de quadros urgentes ou clínicos.</p>
+            </div>
+        </div>
+        <div class="container-inforNossosServicos active">
+            <div class="box-inforNossosServicos">
+                <h4 class="subtitulo-inforNossosServicos"> Emergenciais </h4>
+                <p> Traumas, obstruções, convulsões, intoxicações e outros quadros graves. Não é necessário agendamento.
+                </p>
+                <br>
+                <h4 class="subtitulo-inforNossosServicos"> Ambulatoriais </h4>
+                <p> Tratamento de quadros ambulatoriais que não exigem internação do pet com clínico geral ou médico
+                    veterinário especialista.</p>
+            </div>
+        </div>
+
+        <div class="container-conhecaNossosServisos">
+            <div class="box-left-conhecaNossosServisos">
+                <div class="title-listservicos">
+                    <img src="../../assets/icons/bisturi.png" alt="bisturi icon" style="width: 20px; height: 20px;">
+                    <h4> Cirurgias </h4>
+                </div>
+                <p>Castração ou cirurgias de média e alta complexidade.</p>
+            </div>
+        </div>
+        <div class="container-inforNossosServicos active">
+            <div class="box-inforNossosServicos">
+                <h4 class="subtitulo-inforNossosServicos"> Média e alta complexidade </h4>
+                <ul>
+                    <li> Cirurgias oncológicas </li>
+                    <li> Torácicas</li>
+                    <li>Ortopédicas</li>
+                    <li>Corretivas</li>
+                </ul>
+                <br>
+                <h4 class="subtitulo-inforNossosServicos"> Eletivas </h4>
+                <p> Castração e remoção de tártaro.</p>
+            </div>
+        </div>
+
+        <div class="container-conhecaNossosServisos">
+            <div class="box-left-conhecaNossosServisos">
+                <div class="title-listservicos">
+                    <img src="../../assets/icons/pulso.png" alt="pulso icon" style="width: 20px; height: 20px;">
+                    <h4> Tratamentos </h4>
+                </div>
+                <p>Complementares e para doenças graves.</p>
+            </div>
+        </div>
+        <div class="container-inforNossosServicos active">
+            <div class="box-inforNossosServicos">
+                <h4 class="subtitulo-inforNossosServicos"> Doenças graves </h4>
+                <p> Quimioterapia e cuidados paliativos.</p>
+                <br>
+                <h4 class="subtitulo-inforNossosServicos"> Complementares </h4>
+                <p> Reabilitação ortopédica e acupuntura.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-----RODAPÉ----->
+    <footer style="background-color: #add8e6; margin-top: 47px;">
+        <div class="box1">
+            <h2> Compre por categoria </h2>
+
+            <a href="./acessorio.html">
+                <p> Acessórios </p>
+            </a>
+
+            <a href="./brinquedo.html">
+                <p> Brinquedos </p>
+            </a>
+
+            <a href="./comida-para-gato.html">
+                <p> Ração para gatos </p>
+            </a>
+
+            <a href="./comida-para-cachorro.html">
+                <p> Ração para cachorro </p>
+            </a>
+        </div>
+
+        <div class="box2">
+            <h2> Formas de pagamento </h2>
+
+            <div class="img-formaPagamento">
+                <img src="../../assets/img/img formas de pagamento/mastercard-img.png" alt="mastercard">
+                <img src="../../assets/img/img formas de pagamento/visa-img.png" alt="visa card">
+            </div>
+
+            <div class="img-formaPagamento">
+                <img src="../../assets/img/img formas de pagamento/elo-img.png" alt="elo card">
+                <img src="../../assets/img/img formas de pagamento/boleto-img.png" alt="boleto">
+            </div>
+        </div>
+
+        <div class="box3">
+            <h2> Atendimento ao cliente </h2>
+
+            <a href="#">
+                <p> Central de Ajuda </p>
+            </a>
+
+            <a href="#">
+                <p> Devolução e Reembolso </p>
+            </a>
+
+            <a href="#">
+                <p> Ouvidoria </p>
+            </a>
+        </div>
+    </footer>
+</body>
+
+<script src="../js/index.js"></script>
+</html>

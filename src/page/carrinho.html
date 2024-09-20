@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="./carrinho.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logomarca">
+                <a href="../../index.html">
+                    <img src="../../assets/img/PetVida-logomarca.png" alt="logomarca">
+                </a>
+            </div>
+
+            <div class="barraDePesquisa-container">
+                <div class="box-pesquisa">
+                    <div class="pesquisa">
+                        <input type="text" autocomplete="off" placeholder="Buscar produto" class="input-pesquisa">
+                    </div>
+                    <div class="button-pesquisa">
+                        <button>
+                            <img src="../../assets/icons/pesquisa-icon.png">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-entrarRegistrar" onmouseover="menuShow()" onmouseout="menuHide()">
+                <div class="usuario-icon">
+                    <img src="../../assets/icons/usuário-icon.png">
+                </div>
+
+                <div class="usuario-name">
+                    <p>Entrar/
+                        registrar</p>
+                </div>
+            </div>
+
+            <div class="containerCarrinhoCompra">
+                <div class="box-carrinhoDeCompra">
+                    <a href="./carrinho.html">
+                        <div class="carrinho-icon">
+                            <img src="../../assets/icons/carrinho-de-compra.png" alt="carrinho de compra">
+                        </div>
+                    </a>
+                </div>
+                <div aria-hidden="true" class="emblema-numerico-carrinho"> 0 </div>
+            </div>
+
+        </div>
+        <div class="links-entrarRegistrar">
+            <button class="btn-entrar">
+                <p>Entre</p>
+            </button>
+
+            <button class="btn-registrar">
+                <p>Registrar</p>
+            </button>
+        </div>
+    </header>
+
+    <div class="root-carrinho">
+        <div class="container-left">
+            <div class="box-resumoNumberItens">
+                <div class="title-resumoNumberItens">
+                    <p> Carrinho de Compras </p>
+                    <p class="Number-Itens"> (0) </p>
+                </div>
+                <div class="selecionar-exclir-todosProdutos">
+                    <div class="input-todosItens">
+                        <input type="radio" class="marcar-tudo-carrinho">
+                        <span> Selecionar todos os itens </span>
+                    </div>
+                    <div class="tirar-tudo-carrinho" style="cursor: pointer;"> Excluir tudo do carrinho </div>
+                </div>
+            </div>
+
+            <div class="container-itens">
+                <div class="container-produtosCarrinho">
+                </div>
+            </div>
+        </div>
+
+        <div class="container-right">
+            <div class="resumo-compras">
+                <div class="title-resumo-compras"> Resumo </div>
+            </div>
+            <div class="list-resumo-compras">
+                <div class="box-subtotal">
+                    <div class="label-resumo-compras"> Subtotal </div>
+                    <div class="valor-subtotal">
+                        <span> R$0,00 </span>
+                    </div>
+                </div>
+                <div class="box-frete">
+                    <div class="label-resumo-compras"> Frete </div>
+                    <div class="valor-frete">
+                        <span> R$0,00 </span>
+                    </div>
+                </div>
+                <div class="box-totalEstimado">
+                    <div class="label-resumo-compras"> Total estimado </div>
+                    <div class="valor-totalEstimado">
+                        <span> R$0,00 </span>
+                    </div>
+                </div>
+                <div class="box-btnFinalizarCompra">
+                    <a href="#">
+                        <button class="btn-finalizarCompra" type="button"> Continuar </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="../js/index.js"></script>
+<script src="../js/carrinho.js"></script>
+
+</html>
+

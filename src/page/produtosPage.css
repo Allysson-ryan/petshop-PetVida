@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+body{
+    background-color: #ffff;
+    max-width: 100vw;
+}
+
+/*====-----Home-----====*/
+.container-productArea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 48px;
+    gap: 20px;
+}
+
+/*====-----box left produto-----====*/
+.box-left-imgProduct{
+    width: 30%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 90px;
+}
+
+.boxImgProduct{
+    padding-top: 8px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.imgDoProduto{
+    width: 100%; 
+    height: 100%; 
+    position: relative; 
+    overflow: hidden;
+}
+
+
+
+
+/*====-----box right produto-----====*/
+.box-right-informacaoPodutos{
+    width: 50%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+/*--Titulo do produto--*/
+.product-title{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 25px;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+.box-codigoProduto{
+    display: flex;
+    font-size: 14px;
+}
+
+.product-price{
+    margin: 18px 0px;
+}
+
+/*--quantidade de produto--*/
+.container-quantidadeproduct{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 90%;
+}
+
+.quantidadeproduct{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.box-inputQuantidadeProduct{
+    width: 3rem;
+    height: 1.5rem;
+    display: flex;
+    border: 1px solid #0000;
+}
+
+.tirarProduct, .adicionarProduct{
+    display: flex;
+    align-items: center;
+}
+
+.input-quantidadePoduto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-quantidadePoduto input{
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline:none;
+}
+
+.div-addCrrinho{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.btn-addCarrinho{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15rem;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    background-color: #a6d8e9;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+}
+
+/*--frete--*/
+.box-Frete{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 90%;
+    padding: 12px;
+    background-color: rgb(224, 224, 224);
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.title-frete{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.img-TitleFrete{
+    display: flex;
+}
+
+.img-TitleFrete span{
+    margin-left: 10px;
+    font-size: 17px;
+}
+
+.freteValue{
+    margin-left: 20px;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-left: 40px;
+}
+
+
+/*====----produtos recomendados----====*/
+.produtosRecomendados{
+    margin-top: 2.5rem;
+    padding: 0px 30px;
+    width: 100%;
+}
+
+.container-produtos{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 20% 20% 20% 20%;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+/*--titulo produto recomendado--*/
+.title-ProdutosRecomendados{
+    padding: 10px;
+    font-size: 25px;
+}
+
+/*--card produto recomendado--*/
+.card-produtos{
+    width: 100%;
+    height: 23rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid #cccccc;
+    border-radius: 15px;
+}
+
+.box-imgProdutosCard{
+    height: 100%;
+    align-items: center;
+}
+
+.product-image-card{
+    width: 14.68rem;
+    height: auto;
+    max-height: 17rem;
+}
+
+.product-title-card{
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0px 15px;
+}
+
+.box-PrecoProdutocard{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-price-card{
+    text-align: center;
+    font-size: 23px;
+    font-weight: 500;
+    padding: 20px;
+}
+
+/*====----descrições do produto----====*/
+.container-iformacoesArea{
+    margin-top: 2.5rem;
+    padding: 0px 30px;
+    width: 100%;
+}
+
+.container-Descricao{
+    padding: 0px 30px;
+}
+
+.descricaoProduct h4{
+    padding: 10px;
+    font-size: 25px;
+}
+
+.prodEspecificacoes{
+    width: 100%;
+    height: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.txt-prod{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+/*====----Avaliações produto----====*/
+.container-avaliarProdutos{
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.title-containerAvaliacoes{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.container-avaliarProdutos h4{
+    padding: 10px;
+    font-size: 25px;
+}
+
+.avaliacaoProducts{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: #f3f3f3;
+    border-radius: 15px;
+}
+
+.box-classificacaoProduto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.classificacaoProduto-rating-score1{
+    font-size: 30px;
+    font-weight: 400;
+    color: #37a9cf;
+}
+
+.classificacaoProduto-rating-score2{
+    color: #37a9cf;
+}
+
+.boxFiltrosAvaliacao{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.boxFiltrosAvaliacao button{
+    width: 5.5rem;
+    height: 30px;
+    background: none;
+    border: 2px solid #37a9cf;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #37a9cf;
+    cursor: pointer;
+}
+
+.boxAvaliacoes{
+    width: 100%;
+    height: 20rem;
+    padding: 20px;
+    background: #f3f3f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.boxAvaliacoes h1{
+    font-size: 20px;
+    font-weight: 700;
+}

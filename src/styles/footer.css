@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.box1, .box2, .box3{
+    padding: 30px;
+    text-align: center;
+}
+
+.box1 h2, .box2 h2, .box3 h2 {
+    font-size: 20px;
+    font-weight: 660;
+}
+
+.box1 a, .box3 a{
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+}
+
+.box1 a, .box3 a:hover{
+    color: #474747;
+}
+
+
+/*-----BOX 2-----*/
+.box2{
+    margin-bottom: 10px;
+}
+
+.img-formaPagamento{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/*-----BOX 3-----*/
+.box3{
+    margin-bottom: 12px;
+}

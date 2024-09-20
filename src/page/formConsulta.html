@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Agendamento de Consulta </title>
+    <link rel="stylesheet" href="./formConsulta.css">
+</head>
+<body>
+    <header>
+        <a href="../page/Consulta.html">
+            <div class="icon-fechar">
+                <img src="../../assets/icons/cruz.png" alt=" fechar icon">
+                <p> Fechar </p>
+            </div>
+        </a>
+    </header>
+    <div class="formulario-1">
+        <form>
+            <!--dados do tutor-->
+            <h4> Dados do Tutor </h4>
+
+            <div class="container-input-nomeTutor">
+                <label for="Nome"> Nome do tutor </label>
+                <div class="box-input-nomeTutor">
+                    <input type="text" placeholder="Nome Completo" name="name" required>
+                </div>
+            </div>
+
+            <div class="contatos-tutor">
+                <div class="container-input-email">
+                    <label for="email"> Email </label>
+                    <div class="box-input-email">
+                        <input type="email" name="email" placeholder="exemplo@gmail.com" required>
+                    </div>
+                </div>
+
+                <div class="container-input-numero">
+                    <label for="phone">Número de Celular</label>
+                    <div class="box-input-telefone">
+                        <input type="tel" id="phone" name="phone" placeholder="(XX) XXXXX-XXXX"
+                            pattern="\(\d{2}\) \d{5}-\d{4}" required>
+                    </div>
+                </div>
+            </div>
+
+            <!--dados do animal-->
+            <h4> Dados do Animal </h4>
+            <div class="container-input-nomeAnimal">
+                <label for="name Animal"> Nome do Animal </label>
+                <div class="box-input-nomeAnimal">
+                    <input type="text" placeholder="Nome" name="name Animal" required>
+                </div>
+            </div>
+            <div class="tipo-animal">
+                <div class="input-gato">
+                    <input type="radio" name="gato" value="Gato">
+                    <label for="gato"> Gato </label>
+                </div>
+                <div class="input-cachorro">
+                    <input type="radio" name="cachorro" value="Gato">
+                    <label for="cachorro"> Cachorro </label>
+                </div>
+            </div>
+            <div class="escolha-de-raca">
+                <select name="raça de cachorro">
+                    <option value="" selected disabled> Raça do cachorro </option>
+                </select>
+
+                <select name="raça de gato">
+                    <option value="" selected disabled> Raça do gato </option>
+                </select>
+            </div>
+
+            <h4> Escolha o dia e horário </h4>
+
+            <div class="calendario">
+                <div class="datepicker">
+                    <div class="datepicker-top">
+                        <div class="month-selector">
+                            <button class="arrow" type="button"> <img src="../../assets/icons/angle-left.png" alt="seta esquerda"
+                                    style="width: 20px;"></button>
+                            <span class="month-name">Dezembro 2020</span>
+                            <button class="arrow" type="button"><img src="../../assets/icons/angulo-direito.png" alt="seta direita"
+                                style="width: 20px;"></button>
+                        </div>
+                    </div>
+                    <div class="datepicker-calendar">
+                        <span class="day">Seg</span>
+                        <span class="day">Ter</span>
+                        <span class="day">Qua</span>
+                        <span class="day">Qui</span>
+                        <span class="day">Sex</span>
+                        <span class="day">Sab</span>
+                        <span class="day">Dom</span>
+                        <button class="date faded" type="button">30</button>
+                        <button class="date" type="button">1</button>
+                        <button class="date" type="button">2</button>
+                        <button class="date" type="button">3</button>
+                        <button class="date" type="button">4</button>
+                        <button class="date" type="button">5</button>
+                        <button class="date" type="button">6</button>
+                        <button class="date" type="button">7</button>
+                        <button class="date" type="button">8</button>
+                        <button class="date current-day" type="button">9</button>
+                        <button class="date" type="button">10</button>
+                        <button class="date" type="button">11</button>
+                        <button class="date" type="button">12</button>
+                        <button class="date" type="button">13</button>
+                        <button class="date" type="button">14</button>
+                        <button class="date" type="button">15</button>
+                        <button class="date" type="button">16</button>
+                        <button class="date" type="button">17</button>
+                        <button class="date" type="button">18</button>
+                        <button class="date" type="button">19</button>
+                        <button class="date" type="button">20</button>
+                        <button class="date" type="button">21</button>
+                        <button class="date" type="button">22</button>
+                        <button class="date" type="button">23</button>
+                        <button class="date" type="button">24</button>
+                        <button class="date" type="button">25</button>
+                        <button class="date" type="button">26</button>
+                        <button class="date" type="button">27</button>
+                        <button class="date" type="button">28</button>
+                        <button class="date" type="button">29</button>
+                        <button class="date" type="button">30</button>
+                        <button class="date" type="button">31</button>
+                        <button class="date faded" type="button">1</button>
+                        <button class="date faded" type="button">2</button>
+                        <button class="date faded" type="button">3</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-horarios">
+                <div class="horarios">
+                    <select name="horario">
+                        <option value="escolha um horário" selected disabled> escolha um horário </option>
+                        <option value="08:00"> 08:00am </option>
+                        <option value="09:00"> 09:00am</option>
+                        <option value="10:00"> 10:00pm </option>
+                        <option value="14:00"> 14:00pm </option>
+                        <option value="15:00"> 15:00pm </option>
+                        <option value="16:00"> 16:00pm </option>
+                    </select>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

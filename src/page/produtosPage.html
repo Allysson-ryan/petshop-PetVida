@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="produtosPage.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="/src/js/index.js">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logomarca">
+                <a href="../../index.html">
+                    <img src="../../assets/img/PetVida-logomarca.png" alt="logomarca">
+                </a>
+            </div>
+
+            <div class="barraDePesquisa-container">
+                <div class="box-pesquisa">
+                    <div class="pesquisa">
+                        <input type="text" autocomplete="off" placeholder="Buscar produto" class="input-pesquisa">
+                    </div>
+                    <div class="button-pesquisa">
+                        <button>
+                            <img src="../../assets/icons/pesquisa-icon.png">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-entrarRegistrar" onmouseover="menuShow()" onmouseout="menuHide()">
+                <div class="usuario-icon">
+                    <img src="../../assets/icons/usuário-icon.png">
+                </div>
+
+                <div class="usuario-name">
+                    <p>Entrar/
+                        registrar</p>
+                </div>
+            </div>
+
+            <div class="containerCarrinhoCompra">
+                <div class="box-carrinhoDeCompra">
+                    <a href="./carrinho.html">
+                        <div class="carrinho-icon">
+                            <img src="../../assets/icons/carrinho-de-compra.png" alt="carrinho de compra">
+                        </div>
+                    </a>
+                </div>
+                <div aria-hidden="true" class="emblema-numerico-carrinho"> 0 </div>
+            </div>
+
+        </div>
+        <div class="links-entrarRegistrar">
+            <button class="btn-entrar">
+                <p>Entre</p>
+            </button>
+
+            <button class="btn-registrar">
+                <p>Registrar</p>
+            </button>
+        </div>
+    </header>
+
+    <!------Área do produto------>
+    <div class="container-productArea">
+        <div class="box-left-imgProduct">
+            <div class="boxImgProduct">
+                <img src="#" alt="raçao equilibrio gato" class="imgDoProduto">
+            </div>
+        </div>
+        <div class="box-right-informacaoPodutos">
+            <div class="informacaoPodutos">
+                <h2 class="product-title"> </h2>
+                <div class="box-codigoProduto">
+                    <span>código:</span>
+                    <p class="codigoProduto-number">000000000000000000</p>
+                    <span style="margin-left: 10px;"> | </span>
+                    <p class="temEmEstoque" style="margin-left: 10px; color: rgb(29, 177, 49); font-weight: 900;"> Em
+                        estoque </p>
+                </div>
+                <div class="box-product-price">
+                    <h1 class="product-price"> </h1>
+                </div>
+                <div class="container-quantidadeproduct">
+                    <div class="quantidadeproduct">
+                        <span style="margin-right: 10px;"> Quantidade: </span>
+                        <button class="tirarProduct" style="background: none; border: none;">
+                            <img src="/assets/icons/menos-pequeno.png" alt="menos icon" style="width: 20px;">
+                        </button>
+                        <div class="box-inputQuantidadeProduct">
+                            <div class="input-quantidadePoduto">
+                                <input type="text" value="1">
+                            </div>
+                        </div>
+                        <button class="adicionarProduct" style="background: none; border: none;">
+                            <img src="/assets/icons/mais-pequeno.png" alt="menos icon" style="width: 20px;">
+                        </button>
+                    </div>
+                    <div class="div-addCrrinho">
+                        <button class="btn-addCarrinho" type="button"> Adicionar ao carrinho </button>
+                    </div>
+                </div>
+
+                <div class="box-Frete">
+                    <div class="title-frete">
+                        <div class="img-TitleFrete">
+                            <img src="/assets/icons/caminhão.png" alt="caminhão icon" style="height: 18px;">
+                            <span>Frete grátis</span>
+                        </div>
+                        <div class="freteValue">
+                            <p class="condicao1FreteGratis"> Frete grátis em pedidos acima de R$99,00 </p>
+                            <p class="condicao2FreteGratis"> Frete fixo de <span> R$40 </span> para todo brasil </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr style="margin-top: 50px;">
+    <div class="container-iformacoesArea">
+        <div class="container-Descricao">
+            <div class="descricaoProduct">
+                <h4> Descrição do Produto</h4>
+                <div class="prodEspecificacoes">
+                    <p class="txt-prod"> Este produto não possui descrição</p>
+                </div>
+            </div>
+        </div>
+
+
+        <hr style="margin-top: 50px;">
+
+        <!------Detalhes do Produto------>
+        <div class="container-avaliarProdutos">
+            <h4 class="title-containerAvaliacoes"> Avaliação do produto </h4>
+            <div class="avaliacaoProducts">
+                <div class="box-classificacaoProduto">
+                    <div class="classificacaoProduto">
+                        <span class="classificacaoProduto-rating-score1"> 0 </span>
+                        <span class="classificacaoProduto-rating-score2"> de 5 </span>
+                    </div>
+                    <div class="overview-estrelas">
+                        <img src="/assets/icons/estrela.png" alt="estrela" style="width: 20px;">
+                        <img src="/assets/icons/estrela.png" alt="estrela" style="width: 20px;">
+                        <img src="/assets/icons/estrela.png" alt="estrela" style="width: 20px;">
+                        <img src="/assets/icons/estrela.png" alt="estrela" style="width: 20px;">
+                        <img src="/assets/icons/estrela.png" alt="estrela" style="width: 20px;">
+                    </div>
+                </div>
+                <!------Avaliações dos produtos------>
+                <div class="boxFiltrosAvaliacao">
+                    <div class="boxFiltrosAvaliacao">
+                        <button> tudo </button>
+                        <button> Com mídia </button>
+                        <button> 1 estrelas </button>
+                        <button> 2 estrelas </button>
+                        <button> 3 estrelas </button>
+                        <button> 4 estrelas </button>
+                        <button> 5 estrelas </button>
+                    </div>
+                </div>
+            </div>
+            <div class="boxAvaliacoes">
+                <h1> Esse produto não possui avaliações </h1>
+            </div>
+        </div>
+    </div>
+
+
+    <!--<div class="card-produtos">
+        <img src="../../../assets/img/img brinquedos/bola-macica-cravos-com-corda-G-11619PI7.png" alt="bola macica cravos" class="product-image">
+        <h2 class="product-title"> Bola Macica Cravos Com Corda Para Cachorro </h2>
+        <br>
+        <h4> Por </h4>
+        <p class="product-price"> R$ 35,40 </p>
+        <div class="div-addCrrinho"> 
+            <button class="btn-addCarrinho" type="button"> Adicionar ao carrinho </button>
+        </div>
+    </div>-->
+
+
+    <!-- Rodapé -->
+    <footer style="background-color: #add8e6; margin-top: 47px;">
+        <div class="box1">
+            <h2> Compre por categoria </h2>
+
+            <a href="./acessorio.html">
+                <p> Acessórios </p>
+            </a>
+
+            <a href="./brinquedo.html">
+                <p> Brinquedos </p>
+            </a>
+
+            <a href="./comida-para-gato.html">
+                <p> Ração para gatos </p>
+            </a>
+
+            <a href="./comida-para-cachorro.html">
+                <p> Ração para cachorro </p>
+            </a>
+        </div>
+
+        <div class="box2">
+            <h2> Formas de pagamento </h2>
+
+            <div class="img-formaPagamento">
+                <img src="../../assets/img/img formas de pagamento/mastercard-img.png" alt="mastercard">
+                <img src="../../assets/img/img formas de pagamento/visa-img.png" alt="visa card">
+            </div>
+
+            <div class="img-formaPagamento">
+                <img src="../../assets/img/img formas de pagamento/elo-img.png" alt="elo card">
+                <img src="../../assets/img/img formas de pagamento/boleto-img.png" alt="boleto">
+            </div>
+        </div>
+
+        <div class="box3">
+            <h2> Atendimento ao cliente </h2>
+
+            <a href="#">
+                <p> Central de Ajuda </p>
+            </a>
+
+            <a href="#">
+                <p> Devolução e Reembolso </p>
+            </a>
+
+            <a href="#">
+                <p> Ouvidoria </p>
+            </a>
+        </div>
+    </footer>
+</body>
+
+<script>
+    // Verifica se há um produto selecionado armazenado no localStorage
+    const selectedProduct = JSON.parse(localStorage.getItem('selectedProduct'));
+
+    if (selectedProduct) {
+        // Atualiza a imagem do produto
+        document.querySelector('.imgDoProduto').src = selectedProduct.image;
+
+        // Atualiza o nome do produto
+        document.querySelector('.product-title').innerText = selectedProduct.name;
+
+        // Atualiza o preço do produto
+        document.querySelector('.product-price').innerText = selectedProduct.price;
+    }
+</script>
+
+<script src="/src/js/index.js"></script>
+
+</html>

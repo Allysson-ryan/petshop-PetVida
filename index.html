@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> PetVida </title>
+    <link rel="stylesheet" href="./src/styles/header.css">
+    <link rel="stylesheet" href="./src/styles/footer.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
+    <link rel="stylesheet" href="/src/page/login.css">
+    <link rel="icon" type="img/x-icon" href="">
+
+    <script src="./src/js/carrinho.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logomarca">
+                <a href="#home">
+                    <img src="./assets/img/PetVida-logomarca.png" alt="logomarca">
+                </a>
+            </div>
+
+            <div class="barraDePesquisa-container">
+                <div class="box-pesquisa">
+                    <div class="pesquisa">
+                        <input type="text" autocomplete="off" placeholder="Buscar produto" class="input-pesquisa">
+                    </div>
+                    <div class="button-pesquisa">
+                        <button>
+                            <img src="./assets/icons/pesquisa-icon.png">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-entrarRegistrar" onmouseover="menuShow()" onmouseout="menuHide()">
+                <div class="usuario-icon">
+                    <img src="./assets/icons/usuário-icon.png">
+                </div>
+
+                <div class="usuario-name">
+                    <p>Entrar/
+                        registrar</p>
+                </div>
+            </div>
+
+            <div class="containerCarrinhoCompra">
+                <div class="box-carrinhoDeCompra">
+                    <a href="./src/page/carrinho.html">
+                        <div class="carrinho-icon">
+                            <img src="./assets/icons/carrinho-de-compra.png" alt="carrinho de compra">
+                        </div>
+                    </a>
+                </div>
+                <div aria-hidden="true" class="emblema-numerico-carrinho"> 0 </div>
+            </div>
+            
+        </div>
+        <div class="links-entrarRegistrar">
+            <a href="/src/page/login.html">
+                <button class="btn-entrar">
+                    <p>Entre</p>
+                </button>
+            </a>
+            <a href="/src/page/registrar.html">
+                <button class="btn-registrar">
+                    <p>Registrar</p>
+                </button>
+            </a>
+        </div>
+    </header>
+
+    <!----HOME---->
+    <div id="home">
+        <section class="container-left">
+            <div class="box-TitleLeft">
+                <h1 class="title-containerleft"> O Petshop que os tutores podem confiar </h1>
+                <p class="paragrafo-containerleft1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+                    autem ea accusamus repellendus quos quod atque sed necessitatibus inventore. Fuga earum dicta
+                    commodi nesciunt tempore, veniam qui quia iure autem? </p>
+            </div>
+        </section>
+
+        <div class="container-right">
+                <img src="./assets/img/dog-02.png" alt="dog-01" class="dog-01">
+        </div>
+    </div>
+
+    <!----COMPRE POR CATEGORIA---->
+    <div class="container-compreCategoria">
+        <h2 class="titulo-compreCategoria"> Compre por categorias </h2>
+        <section class="box-Categorias">
+
+            <a href="./src/page/acessorio.html">
+                <img src="./assets/img/img o que temos/Acessórios.png" alt="acessórios-para-pet"
+                    class="img-compreCategoria">
+            </a>
+
+            <a href="./src/page/brinquedo.html">
+                <img src="./assets/img/img o que temos/brinquedos.png" alt="brinquedos" class="img-compreCategoria">
+            </a>
+
+            <a href="./src/page/comida-para-cachorro.html">
+                <img src="./assets/img/img o que temos/racao-cachorro.png" alt="comidacachorro" class="img-compreCategoria">
+            </a>
+
+            <a href="./src/page/comida-para-gato.html">
+                <img src="./assets/img/img o que temos/racao-gato.png" alt="comidagato" class="img-compreCategoria">
+            </a>
+        </section>
+    </div>
+
+    <!----PRODUTOS EM DESTAQUES---->
+    <H1 class="title-produtosDestaque"> Destaques para você </H1>
+    <div class="Produtos-destaque">
+        <div class="card-produtos">
+            <div>
+                <a href="/src/page/produtosPage.html" class="product-link" style="text-decoration: none;">
+                    <img src="../../assets/img/img comida gato/racao-golden-gatos-adultos-frango-1-kg_1.jpg"
+                        alt="ração royal canin medium" class="product-image">
+                </a>
+                <h2 class="product-title"> Ração Golden Gatos Adultos Frango </h2>
+                <br>
+                <h4> Por </h4>
+                <p class="product-price"> R$ 154,90 </p>
+            </div>
+            <div class="div-addCrrinho">
+                <button class="btn-addCarrinho"> Adicionar ao carrinho </button>
+            </div>
+        </div>
+
+        <div class="card-produtos">
+            <a href="/src/page/produtosPage.html" class="product-link" style="text-decoration: none;">
+                <img src="../../../assets/img/img comida cachorro/racao-formula-natural-senior.png"
+                    alt="ração formula natural senior" class="product-image">
+            </a>
+            <h2 class="product-title"> Ração Life Super Premium Para Cães Sênior </h2>
+            <br>
+            <h4> Por </h4>
+            <p class="product-price"> R$ 266,90 </p>
+            <div class="div-addCrrinho">
+                <button class="btn-addCarrinho" type="button"> Adicionar ao carrinho </button>
+            </div>
+        </div>
+
+        <div class="card-produtos">
+            <a href="/src/page/produtosPage.html" class="product-link" style="text-decoration: none;">
+                <img src="../../assets/img/img comida gato/Racao-Umida-Guabi-Natural-Sache-Salmao-e-Frango-Para-Gato-Castrado-85g.jpg"
+                    alt="ração raças cachorro golden pequenas" class="product-image">
+            </a>
+            <h2 class="product-title"> Ração Umida Guabi Natural Sache Salmão e Frango Para Gato Castrado 85g </h2>
+            <br>
+            <h4> Por </h4>
+            <p class="product-price"> R$ 4,90 </p>
+            <div class="div-addCrrinho">
+                <button class="btn-addCarrinho" type="button"> Adicionar ao carrinho </button>
+            </div>
+        </div>
+
+        <div class="card-produtos">
+            <a href="/src/page/produtosPage.html" class="product-link" style="text-decoration: none;">
+                <img src="../../../assets/imagem cama e caixa de transporte/cachorro/cama-cachorro-bege.png"
+                    alt="cama cachorro bege" class="product-image">
+            </a>
+            <h2 class="product-title"> Caminha Para Cães Suiça Em Pelúcia Bege </h2>
+            <br>
+            <h4> Por </h4>
+            <p class="product-price"> R$ 59,90 </p>
+            <div class="div-addCrrinho">
+                <button class="btn-addCarrinho" type="button"> Adicionar ao carrinho </button>
+            </div>
+        </div>
+
+        <div class="card-produtos">
+            <a href="/src/page/produtosPage.html" class="product-link" style="text-decoration: none;">
+                <img src="../../../assets/imagem cama e caixa de transporte/gato/Casinha-para-Gatos-BunkCat-Rosa---Yan-Pet.png"
+                    alt="casinha gato bunkcat rosa" class="product-image">
+            </a>
+            <h2 class="product-title"> Casinha para Gatos BunkCat - yan pet </h2>
+            <br>
+            <h4> Por </h4>
+            <p class="product-price"> R$ 214,90 </p>
+            <div class="div-addCrrinho">
+                <button class="btn-addCarrinho" type="button"> Adicionar ao carrinho </button>
+            </div>
+        </div>
+
+        <div class="card-produtos">
+            <a href="/src/page/produtosPage.html" class="product-link" style="text-decoration: none;">
+                <img src="../../../assets/imagem cama e caixa de transporte/gato/Chale-House-Casinha-Azul-para-Gatos---Yan-Pet.png"
+                    alt="casinha gato chale house rosa" class="product-image">
+            </a>
+            <h2 class="product-title"> Casinha para Gato Chalé House - yan pet </h2>
+            <br>
+            <h4> Por </h4>
+            <p class="product-price"> R$ 359,90 </p>
+            <div class="div-addCrrinho">
+                <button class="btn-addCarrinho"> Adicionar ao carrinho </button>
+            </div>
+        </div>
+
+        <div class="card-produtos">
+            <a href="/src/page/produtosPage.html" class="product-link" style="text-decoration: none;">
+                <img src="../../../assets/img/img brinquedos/brinquedo-pet-play-pneu-azul-113655.png" alt="pneu azul"
+                    class="product-image">
+            </a>
+            <h2 class="product-title"> Brinquedo Pneu Azul Para Cachorro </h2>
+            <br>
+            <h4> Por </h4>
+            <p class="product-price"> R$ 21,54 </p>
+            <div class="div-addCrrinho">
+                <button class="btn-addCarrinho" type="button"> Adicionar ao carrinho </button>
+            </div>
+        </div>
+
+        <div class="card-produtos">
+            <a href="/src/page/produtosPage.html" class="product-link" style="text-decoration: none;">
+                <img src="../../../assets/img/img brinquedos/bola-macica-cravos-com-corda-G-11619PI7.png"
+                    alt="bola macica cravos" class="product-image">
+            </a>
+            <h2 class="product-title"> Bola Macica Cravos Com Corda Para Cachorro </h2>
+            <br>
+            <h4> Por </h4>
+            <p class="product-price"> R$ 35,40 </p>
+            <div class="div-addCrrinho">
+                <button class="btn-addCarrinho" type="button"> Adicionar ao carrinho </button>
+            </div>
+        </div>
+    </div>
+
+    <!----SERVIÇOS---->
+    <div class="wrapper-cardServicos">
+        <div class="box-titleCard">
+            <h1 class="title-card"> Serviços </h1>
+        </div>
+        <section class="box-cardServicos">
+            <div class="cards card1">
+                <div class="caixa-informationService">
+                    <img src="./assets/img/img serviços/img-tosa.jpg" alt="img banho tosa" class="imagem30px">
+                    <h3> Banho e tosa </h3>
+                    <div class="card-paragrafo">
+                        <p>Nosso serviço de banho e tosa oferece cuidados completos para seu pet, garantindo higiene, conforto e bem-estar. Com profissionais experientes, cuidamos de cada detalhe para deixar seu amigo limpo e saudável.</p>
+                    </div>
+                </div>
+                <div class="link-ButtonAgendar">
+                    <a href="./src/page/BanhoTosa.html">
+                        <button class="btnAgendar"> Agende aqui </button>
+                    </a>
+                </div>
+            </div>
+            <div class="cards card2">
+                <div class="caixa-informationService">
+                    <img src="./assets/img/img serviços/img-consulta.jpg" alt="img consulta">
+                    <h3> Consulta </h3>
+                    <div class="card-paragrafo">
+                        <p>Oferecemos consultas veterinárias com profissionais qualificados para cuidar da saúde do seu pet. Realizamos exames, diagnósticos e orientações personalizadas, garantindo o bem-estar do seu amigo.</p>
+                    </div>
+                </div>
+                <div class="link-ButtonAgendar">
+                    <a href="./src/page/Consulta.html">
+                        <button class="btnAgendar"> Agende aqui </button>
+                    </a>
+                </div>
+            </div>
+            <div class="cards card3">
+                <div class="caixa-informationService">
+                    <img src="./assets/img/img serviços/img-hospedagem2.png" alt="hospedagem">
+                    <h3> Hospedagem </h3>
+                    <div class="card-paragrafo">
+                        <p>Nosso serviço de hospedagem oferece um ambiente seguro e acolhedor para seu pet. Com cuidados diários, alimentação e atenção personalizada, garantimos conforto e tranquilidade durante a estadia.</p>
+                    </div>
+                </div>
+                <div class="link-ButtonAgendar">
+                    <a href="#">
+                        <button class="btnAgendar"> Agende aqui </button>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="box1">
+            <h2> Compre por categoria </h2>
+
+            <a href="src/page/acessorio.html">
+                <p> Acessórios </p>
+            </a>
+
+            <a href="src/page/brinquedo.html">
+                <p> Brinquedos </p>
+            </a>
+
+            <a href="src/page/comida-para-gato.html">
+                <p> Ração para gatos </p>
+            </a>
+
+            <a href="src/page/comida-para-cachorro.html">
+                <p> Ração para cachorro </p>
+            </a>
+        </div>
+
+        <div class="box2">
+            <h2> Formas de pagamento </h2>
+
+            <div class="img-formaPagamento">
+                <img src="./assets/img/img formas de pagamento/mastercard-img.png" alt="mastercard">
+                <img src="./assets/img/img formas de pagamento/visa-img.png" alt="visa card">
+            </div>
+
+            <div class="img-formaPagamento">
+                <img src="./assets/img/img formas de pagamento/elo-img.png" alt="elo card">
+                <img src="./assets/img/img formas de pagamento/boleto-img.png" alt="boleto">
+            </div>
+        </div>
+
+        <div class="box3">
+            <h2> Atendimento ao cliente </h2>
+
+            <a href="#">
+                <p> Central de Ajuda </p>
+            </a>
+
+            <a href="#">
+                <p> Devolução e Reembolso </p>
+            </a>
+
+            <a href="#">
+                <p> Ouvidoria </p>
+            </a>
+        </div>
+    </footer>
+</body>
+
+
+<script src="./src/js/index.js"></script>
+
+
+
+</html>

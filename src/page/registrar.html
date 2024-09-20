@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar</title>
+    <link rel="stylesheet" href="/src/page/registrar.css">
+</head>
+
+<body>
+    <div class="containerRegistrar">
+        <div class="box-registrarSection">
+            <header>
+                <div class="containerTitleRegistrar">
+                    <span> Registrar-se </span>
+                </div>
+                <a href="/index.html">
+                    <div class="icon-fechar">
+                        <img src="../../assets/icons/cruz.png" alt="fechar icon">
+                    </div>
+                </a>
+            </header>
+
+            <form>
+                <div class="container-informacoesRegistrar">
+                    <div class="informacoesPessoais">
+                        <div class="container-nome style-div-inputs">
+                            <label for="name">nome</label>
+                            <div class="box-inputNome style-box-input">
+                                <input type="text" name="name" placeholder="Digite seu Nome" required autocomplete="given-name">
+                            </div>
+                        </div>
+                        <div class="container-sobrenome style-div-inputs">
+                            <label for="sobrenome">sobrenome</label>
+                            <div class="box-inputSobrenome style-box-input">
+                                <input type="text" name="sobrenome" placeholder="Digite o sobrenome" required autocomplete="family-name">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-senha style-div-inputs">
+                        <label for="email">email</label>
+                        <div class="box-inputEmail style-box-input">
+                            <input type="email" name="email" placeholder="Digite seu email" required>
+                        </div>
+                    </div>
+                    <div class="div-boxSenha">
+                        <div class="container-senha style-div-inputs">
+                            <label for="senha">crie uma senha</label>
+                            <div class="box-inputSenha style-box-input">
+                                <input type="password" name="senha" placeholder="Crie uma senha" required>
+                            </div>
+                        </div>
+                        <div class="container-ConfirmeSenha style-div-inputs">
+                            <label for="senha">confirme sua senha</label>
+                            <div class="box-inputSenha style-box-input">
+                                <input type="password" name="senha" placeholder="Confirme sua senha" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="containerBtnsRegistrar">
+                        <div class="btnRegistrar">
+                            <button>Registrar</button>
+                        </div>
+                        <div class="box-btnsLinks">
+                            <div class="btnEntrar">
+                                <a href="/src/page/login.html">
+                                    <button type="button">Entrar com conta existente</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <div class="container-outrasFormasRegistro">
+                <div class="box-titleOutrasFormasRegistro">
+                    <span class="left"></span>
+                    <label class="tile-outrasFormasRegistro">Registre-se com</label>
+                    <span class="right"></span>
+                </div>
+                <div class="box-outrasFormasRegistro">
+                    <div class="box-googleRegistro">
+                        <button style="background: none; border: none; cursor: pointer;">
+                            <img src="/assets/icons/google-logo.png" alt="google icon">
+                        </button>
+                    </div>
+                    <div class="facebookRegistro">
+                        <button style="background: none; border: none; cursor: pointer;">
+                            <img src="/assets/icons/facebook-icon.png" alt="facebook icon">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</body>
+
+</html>

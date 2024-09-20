@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+body{
+    background-color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*---header---*/
+header{
+    width: 98vw;
+    height: 50px;
+}
+
+header a{
+    text-decoration: none;
+    display: flex;
+    align-items: center ;
+    justify-content: start;
+    flex-direction: row;
+}
+
+.icon-fechar{
+    padding: 20px;
+    margin-left: 30px;
+    display: flex;
+    align-items: center ;
+    justify-content: start;
+}
+
+.icon-fechar p{
+    color: #000000;
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.icon-fechar img{
+    width: 15px;
+}
+
+/*------=======Formulário 1=======------*/
+.formulario-1{
+    width: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 37px;
+}
+
+.formulario-1 form{
+    padding: 20px;
+}
+
+form h4{
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+}
+
+/*=======Dados do tutor=======*/
+.formulario-1 form label{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.container-input-nomeTutor, .container-input-nomeAnimal{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+
+.box-input-nomeTutor, .box-input-nomeAnimal{
+    border: 1.5px solid #c5c5c5;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.box-input-nomeTutor input, .box-input-nomeAnimal input{
+    width: 100%;
+    padding: 15px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+/*=======Dados do Animal=======*/
+.contatos-tutor{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 12px;
+}
+
+.box-input-email{
+    border: 1.5px solid #c5c5c5;
+    width: 15rem;
+    border-radius: 5px;
+}
+
+.box-input-telefone{
+    border: 1.5px solid #c5c5c5;
+    border-radius: 5px;
+}
+
+.box-input-email input, .box-input-telefone input{
+    width: 100%;
+    padding: 15px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+.tipo-animal{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+.escolha-de-raca{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.escolha-de-raca option{
+    height: 30px;
+}
+
+/*=======Calendário=======*/
+.calendario{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.datepicker {
+	width: 72%;
+	max-width: 350px;
+	background-color: #FDFDFD;
+	border-radius: 10px;
+	box-shadow: 0 0 2px 0 rgba(#000, .2), 0 5px 10px 0 rgba(#000, .1);
+	padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.datepicker-top {
+	margin-bottom: 1rem;
+}
+
+.month-selector {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.arrow {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 0;
+	background-color:#FFF;
+	border-radius: 12px;
+	width: 2.5rem;
+	height: 2.5rem;
+	box-shadow: 0 0 2px 0 rgba(#000,.25), 0 0 10px 0 rgba(#000, .15);
+}
+
+.month-name {
+	font-weight: 600;
+}
+
+.datepicker-calendar {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	grid-row-gap: 0.5rem;
+}
+
+.day, .date {
+	justify-self: center;
+}
+
+.day {
+	color: #999FA6;
+	font-size: .875em;
+	font-weight: 500;
+	justify-self: center;
+}
+
+.date {
+	border: 0;
+	padding: 0;
+	width: 2rem;
+	height: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 6px;
+	font-weight: 600;
+	border: 2px solid transparent;
+	background-color: transparent;
+	cursor: pointer;
+	&:focus {
+		outline: 0;
+		color: #008FFD;
+		border: 2px solid #CBE8FF;	
+	}	
+}
+
+.faded {
+	color: #999FA6;
+}
+
+.current-day {
+	color: #FFF;
+	border-color: #008FFD;
+	background-color: #008FFD;
+	&:focus {
+		background-color: #CBE8FF;
+	}
+}
+
+/*=======Horários=======*/
+.box-horarios{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.horarios select{
+    width: 20rem;
+    height: 30px;
+    border-radius: 8px;
+}

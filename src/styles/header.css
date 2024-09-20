@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+header{
+    position: fixed;
+    font-family: "Montserrat", sans-serif;
+    padding: 0 2rem;
+    max-width: 100vw;
+    width: 100%;
+    height: 60px;
+    background: #add8e6;
+    z-index: 5000;
+}
+
+.navbar{
+    width: 100vw;
+    height: 60px;
+    max-width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*----LOGOMARCA----*/
+.logomarca {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-right: 30px;
+}
+
+.logomarca img{
+    width: 8.5rem;
+}
+
+
+/*----BARRA DE PESQUISA----*/
+.barraDePesquisa-container{
+    background: #ffffff;
+    border-radius: 30px;
+    padding:4px;
+    display: flex;
+    align-items: center;
+    width: 40rem;
+    margin: 0px 15px;
+}
+
+.box-pesquisa{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 2px;
+    width: 100%;
+}
+
+.pesquisa input{
+    width: 36rem;
+    height: 25px;
+    border:none;
+    margin-left: 10px;
+}
+
+.pesquisa input:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+
+.button-pesquisa{
+    margin: 3px;
+}
+
+.button-pesquisa button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.button-pesquisa button:hover{
+    background: none;
+}
+
+/*----ENTRAR/REGISTRAR----*/
+.box-entrarRegistrar{
+    background: #ffffff;
+    border-radius: 30px;
+    padding:4px;
+    display: flex;
+    align-items: center;
+    width: 7.5rem;
+    height: 2.5rem;
+    margin-left: 30px;
+}
+
+.usuario-icon img{
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+}
+
+.usuario-name{
+    font-size: 13px;
+    font-weight:600;
+    margin: 5px;
+}
+
+/*----LINKS ENTRAR/REGISTRAR----*/
+.links-entrarRegistrar{
+    direction: ltr;
+    display: none;
+    position: absolute;
+    right: 12rem;
+    top: 38px;
+    width: 155px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 16px;
+    padding: 8px 24px 24px;
+    color: #191919;
+    background-color: #fff;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    -webkit-box-shadow: 0 2px 8px 0 rgba(0,0,0,.2);
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,.2);
+    z-index: 1030;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.links-entrarRegistrar:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 90px;
+    display: block;
+    width: 0;
+    height: 0;
+    border-right: 12px solid transparent;
+    border-bottom: 10px solid #ffff;
+    border-left: 12px solid transparent;
+}
+
+.btn-entrar{
+    width: 7rem;
+    height: 1.8rem;
+    border: none;
+    background-color: #000000;
+    color: #fff;
+    font-weight:750;
+    font-size: 16px;
+    border-radius: 17px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    transition: .2s;
+}
+
+.btn-registrar{
+    width: 7rem;
+    height: 1.8rem;
+    border: none;
+    background: #fff;
+    font-size: 15px;
+}
+
+.btn-entrar:hover{
+    background: #000000;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.btn-registrar:hover{
+    background: #ffff;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+
+/*----Carrinho----*/
+.containerCarrinhoCompra{
+    display: flex;
+    margin-left: 30px;
+}
+
+.box-carrinhoDeCompra{
+    padding-right:9px;
+    display: flex;
+    flex-direction: row;
+}
+
+.carrinho-icon{
+    padding:4px;
+
+}
+
+.emblema-numerico-carrinho{
+    left: -1.400rem;
+    background-color: #fff;
+    border: .125rem solid #ffff;
+    border-radius: 50px;
+    color: #000000;
+    font-size: 13px;
+    line-height: 1.2em;
+    margin-right: -.875rem;
+    min-width: .6875rem;
+    padding: 0 .300rem;
+    position: relative;
+    text-align: center;
+    max-height: .999rem;
+}
+
+
+
+
+/*====----Responsividade----====*/
+@media screen and (min-width: 840px){
+    /*----LINKS ENTRAR/REGISTRAR----*/
+    .links-entrarRegistrar{
+       right: 4rem;
+   }
+}
+
+@media screen and (min-width: 860px){
+    /*----LINKS ENTRAR/REGISTRAR----*/
+    .links-entrarRegistrar{
+       right: 5rem;
+   }
+}
+
+@media screen and (min-width: 1080px){
+    /*----LINKS ENTRAR/REGISTRAR----*/
+    .links-entrarRegistrar{
+       right: 7.5rem;
+   }
+}
+
+@media screen and (min-width: 1265px){
+    /*----LINKS ENTRAR/REGISTRAR----*/
+    .links-entrarRegistrar{
+       right: 8rem;
+   }
+}
+
+@media screen and (min-width: 1290px){
+    /*----LINKS ENTRAR/REGISTRAR----*/
+    .links-entrarRegistrar{
+       right: 10rem;
+   }
+}
+
+@media screen and (min-width: 1380px){
+    /*----LINKS ENTRAR/REGISTRAR----*/
+    .links-entrarRegistrar{
+       right: 15rem;
+   }
+}
+
+@media screen and (min-width: 1440px){
+    /*----LINKS ENTRAR/REGISTRAR----*/
+    .links-entrarRegistrar{
+       right: 15rem;
+   }
+}
+
+@media screen and (min-width: 1530px){
+    /*----LINKS ENTRAR/REGISTRAR----*/
+    .links-entrarRegistrar{
+       right: 17rem;
+   }
+}
+
+@media screen and (min-width: 1595px){
+    /*----LINKS ENTRAR/REGISTRAR----*/
+    .links-entrarRegistrar{
+       right: 20rem;
+   }
+}
+
+@media screen and (min-width: 1615px){
+    /*----LINKS ENTRAR/REGISTRAR----*/
+    .links-entrarRegistrar{
+       right: 22rem;
+   }
+}
+
+@media screen and (min-width: 1780px){
+    /*----LINKS ENTRAR/REGISTRAR----*/
+    .links-entrarRegistrar{
+       right: 27rem;
+   }
+}
+
+@media screen and (min-width: 1920px){
+    /*----LINKS ENTRAR/REGISTRAR----*/
+    .links-entrarRegistrar{
+       right: 32rem;
+   }
+}
+
+@media screen and (min-width: 2075px){
+    /*----LINKS ENTRAR/REGISTRAR----*/
+    .links-entrarRegistrar{
+       right: 35rem;
+   }
+}
+
+@media screen and (max-width: 1180px){
+    /*----BARRA DE PESQUISA----*/
+    .barraDePesquisa-container{
+        width: 35rem;
+    }
+    
+    .pesquisa input{
+        width: 32rem;
+    }
+}
+
+
+@media screen and (max-width: 1080px){
+    /*----BARRA DE PESQUISA----*/
+    .barraDePesquisa-container{
+        width: 30rem;
+    }
+    
+    .pesquisa input{
+        width: 26rem;
+    }
+}
+
+@media screen and (max-width: 990px){
+    /*----LOGOMARCA----*/
+    .logomarca {
+        margin-right: 20px;
+    }
+
+    /*----BARRA DE PESQUISA----*/
+    .barraDePesquisa-container{
+        margin: 0px 10px;
+    }
+
+    /*----ENTRAR/REGISTRAR----*/
+    .box-entrarRegistrar{
+        margin-left: 20px;
+    }
+
+    /*----Carrinho----*/
+    .containerCarrinhoCompra{
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 940px){
+    /*----BARRA DE PESQUISA----*/
+    .barraDePesquisa-container{
+        width: 25rem;
+    }
+    
+    .pesquisa input{
+        width: 22rem;
+    }
+}
+
+@media screen and (max-width: 865px){
+    /*----LOGOMARCA----*/
+    .logomarca img{
+        width: 7.5rem;
+        margin-right: 17px;
+    }
+
+    /*----BARRA DE PESQUISA----*/
+    .barraDePesquisa-container{
+        margin: 0px 10px;
+        width: 21rem;
+    }
+    
+    .pesquisa input{
+        width: 18rem;
+    }
+
+    /*----ENTRAR/REGISTRAR----*/
+    .box-entrarRegistrar{
+        margin-left: 17px;
+    }
+
+    .box-entrarRegistrar{
+        width: 6rem;
+        height: 2.5rem;
+    }
+    
+    .usuario-icon img{
+        width: 17px;
+        height: 17px;
+        margin: 5px 5px  5px 7px;
+    }
+    
+    .usuario-name{
+        font-size: 11px;
+        font-weight:600;
+        margin: 5px;
+    }
+
+    /*----Carrinho----*/
+    .containerCarrinhoCompra{
+        margin-left: 17px;
+    }
+}
+
+@media screen and (max-width: 775px){
+    /*----LOGOMARCA----*/
+    .logomarca img{
+        width: 6.5rem;
+        margin-right: 10px;
+    }  
+
+    /*----BARRA DE PESQUISA----*/
+    .barraDePesquisa-container{
+        width: 19rem;
+    }
+    
+    .pesquisa input{
+        width: 16rem;
+    }
+
+    /*----Carrinho----*/
+    .carrinho-icon img{
+       width: 30px;
+    }
+}
+
+@media screen and (max-width: 710px){
+    /*----ENTRAR/REGISTRAR----*/
+    .box-entrarRegistrar{
+        background: none;
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .usuario-icon img{
+        width: 25px;
+        height: 25px;
+        margin: none;
+    }
+
+    .usuario-name{
+        display: none;
+    }
+
+    /*----Carrinho----*/
+    .containerCarrinhoCompra{
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 666px){
+    /*----LOGOMARCA----*/
+    .logomarca img{
+        margin-right: 5px;
+    }  
+
+    /*----BARRA DE PESQUISA----*/
+    .barraDePesquisa-container{
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width: 635px){
+    /*----BARRA DE PESQUISA----*/
+    .barraDePesquisa-container{
+        width: 16rem;
+    }
+    
+    .pesquisa input{
+        width: 13rem;
+    }
+}
+
+@media screen and (max-width: 585px){
+    header{
+        padding: 0 0.5rem;
+    }
+
+    /*----LOGOMARCA----*/
+    .logomarca img{
+        width: 5.5rem;
+    }  
+
+    /*----Carrinho----*/
+    .containerCarrinhoCompra{
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width: 525px){
+    /*----ENTRAR/REGISTRAR----*/
+    .box-entrarRegistrar{
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-left: 4px;
+    }
+
+    .usuario-icon img{
+        width: 19px;
+        height: 19px;
+    }
+
+    /*----Carrinho----*/
+    .containerCarrinhoCompra{
+        margin-left: 1px;
+    }
+
+    .carrinho-icon img{
+        width: 23px;
+     }
+
+    .emblema-numerico-carrinho{
+        left: -1.200rem;
+        top: -0.10rem;
+    }
+}
+
+@media screen and (max-width: 475px){
+    /*----BARRA DE PESQUISA----*/
+    .barraDePesquisa-container{
+        width: 13rem;
+    }
+    
+    .pesquisa input{
+        width: 10rem;
+    }
+}
+

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title> Formulária banho e tosa </title>
+
+    <link rel="stylesheet" href="./BanhoTosa.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logomarca">
+                <a href="../../index.html">
+                    <img src="../../assets/img/PetVida-logomarca.png" alt="logomarca">
+                </a>
+            </div>
+
+            <div class="barraDePesquisa-container">
+                <div class="box-pesquisa">
+                    <div class="pesquisa">
+                        <input type="text" autocomplete="off" placeholder="Buscar produto" class="input-pesquisa">
+                    </div>
+                    <div class="button-pesquisa">
+                        <button>
+                            <img src="../../assets/icons/pesquisa-icon.png">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-entrarRegistrar" onmouseover="menuShow()" onmouseout="menuHide()">
+                <div class="usuario-icon">
+                    <img src="../../assets/icons/usuário-icon.png">
+                </div>
+
+                <div class="usuario-name">
+                    <p>Entrar/
+                        registrar</p>
+                </div>
+            </div>
+
+            <div class="containerCarrinhoCompra">
+                <div class="box-carrinhoDeCompra">
+                    <a href="./carrinho.html">
+                        <div class="carrinho-icon">
+                            <img src="../../assets/icons/carrinho-de-compra.png" alt="carrinho de compra">
+                        </div>
+                    </a>
+                </div>
+                <div aria-hidden="true" class="emblema-numerico-carrinho"> 0 </div>
+            </div>
+
+        </div>
+        <div class="links-entrarRegistrar">
+            <button class="btn-entrar">
+                <p>Entre</p>
+            </button>
+
+            <button class="btn-registrar">
+                <p>Registrar</p>
+            </button>
+        </div>
+    </header>
+
+    <!-----HOME----->
+    <div id="home-banhoTosa">
+        <div class="container-left-home">
+            <div class="navbar-banhoTosa">
+                <h1> Banho & tosa </h1>
+                <h4> O cuidado que seu pet merece </h4>
+                <div class="button-agendar">
+                    <a href="./formBanhoTosa.html"> <Button> Agende agora </Button> </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-right-home">
+            <img src="../../assets/img/img serviços/cachorro-momentoDeBeleza.png" alt="Cachorro o banho">
+        </div>
+    </div>
+
+<!--====Etapas do banho====-->
+    <div class="Etapas-do-banho">
+        <h1> Conheça as etapas do banho </h1>
+        <div class="box-etapas-banho">
+            <div class="etapas">
+                <div class="details">
+                    <img src="../../assets/icons/bolhaDeSabao-icon.png" alt="bolhas">
+                    <h4> Banho </h4>
+                </div>
+            </div>
+
+            <div class="etapas">
+                <div class="details">
+                    <img src="../../assets/icons/secador.png" alt="secador">
+                    <h4> Secagem </h4>
+                </div>
+            </div>
+
+            <div class="etapas">
+                <div class="details">
+                    <img src="../../assets/icons/pente.png" alt="pente">
+                    <h4> Escova na pelagem </h4>
+                </div>
+            </div>
+
+            <div class="etapas">
+                <div class="details">
+                    <img src="../../assets/icons/cotonetes.png" alt="cotonetes">
+                    <h4> Limpesa das orelhas </h4>
+                </div>
+            </div>
+
+            <div class="etapas">
+                <div class="details">
+                    <img src="../../assets/icons/tesoura.png" alt="tesoura">
+                    <h4> corte de unhas </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--====Benefícios do banho====-->
+    <div class="container-beneficiosBanho">
+        <div class="box-laft-beneficiosBanho">
+            <img src="../../assets/img/img serviços/veterinario-com-cachorro.png" alt="img veterinário com cachorro">
+        </div>
+        <div class="box-right-beneficiosBanho">
+            <h1 class="titulo-beneficiosBanho"> A higiene do pet é indicada por veterinários </h1>
+            <div class="benefícios-do-banho">
+                <div class="check-icon">
+                    <img src="../../assets/icons/check-icon.png" alt="check icon">
+                </div>
+                <p> O banho é um aliado no tratamento de doenças de pele nos pets. </p>
+            </div>
+            <div class="benefícios-do-banho">
+                <div class="check-icon">
+                    <img src="../../assets/icons/check-icon.png" alt="check icon">
+                </div>
+                <p> A tosa higiênica facilita a limpeza do pet e evita a contaminação do ambiente. </p>
+            </div>
+            <div class="benefícios-do-banho">
+                <div class="check-icon">
+                    <img src="../../assets/icons/check-icon.png" alt="check icon">
+                </div>
+                <p> A escovação do pelo reduz a queda habitual e elimina os nós. </p>
+            </div>
+            <div class="benefícios-do-banho">
+                <div class="check-icon">
+                    <img src="../../assets/icons/check-icon.png" alt="check icon">
+                </div>
+                <p> O banho ajuda a manter a pelagem bem cuidada e evita maus cheiros. </p>
+            </div>
+        </div>
+    </div>
+
+<!--====Como funciona o atendimento====-->
+    <div class="container-comoFunciona">
+        <H1> Como funciona o atendimento</H1>
+        
+        <div class="como-funciona">
+            <div class="informacao">
+                <div class="style-BoxNumber"> 1 </div>
+                <div class="detalhes">
+                    <div class="title">
+                        <img src="../../assets/icons/calendario.png" alt="calendário icon">
+                        <h1> Agende um horário </h1>
+                    </div>
+                    <div class="paragrafo-detalhes">
+                        <p> Marque pelo site ou nas lojas físicas. </p>
+                    </div>
+                </div> 
+            </div>
+            <div class="informacao"> 
+                <div class="style-BoxNumber"> 2 </div>
+                <div class="detalhes">
+                    <div class="title">
+                        <img src="../../assets/icons/marcador-mapa.png" alt="marcado de mapas icon">
+                        <h1> Vá até a loja </h1>
+                    </div>
+                    <div class="paragrafo-detalhes">
+                        <p> Estaremos esperando por vocês no dia e horário agendados. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="informacao"> 
+                <div class="style-BoxNumber"> 3 </div>
+                <div class="detalhes">
+                    <div class="title">
+                        <img src="../../assets/icons/checkin-icon.png" alt="check-in icon">
+                        <h1> Faça o check-in </h1>
+                    </div>
+                    <div class="paragrafo-detalhes">
+                        <p> Ao chegar, confirmamos as necessidades do pet antes de começar o atendimento. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="informacao"> 
+                <div class="style-BoxNumber"> 4 </div>
+                <div class="detalhes">
+                    <div class="title">
+                        <img src="../../assets/icons/check-icon.png" alt="check icon">
+                        <h1> Busque o pet </h1>
+                    </div>
+                    <div class="paragrafo-detalhes">
+                        <p> Fique na loja ou seja avisado por telefone quando o pet estiver pronto. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----RODAPÉ----->
+    <footer style="background-color: #add8e6; margin-top: 47px;">
+        <div class="box1">
+            <h2> Compre por categoria </h2>
+
+            <a href="./acessorio.html">
+                <p> Acessórios </p>
+            </a>
+
+            <a href="./brinquedo.html">
+                <p> Brinquedos </p>
+            </a>
+
+            <a href="./comida-para-gato.html">
+                <p> Ração para gatos </p>
+            </a>
+
+            <a href="./comida-para-cachorro.html">
+                <p> Ração para cachorro </p>
+            </a>
+        </div>
+
+        <div class="box2">
+            <h2> Formas de pagamento </h2>
+
+            <div class="img-formaPagamento">
+                <img src="../../assets/img/img formas de pagamento/mastercard-img.png" alt="mastercard">
+                <img src="../../assets/img/img formas de pagamento/visa-img.png" alt="visa card">
+            </div>
+
+            <div class="img-formaPagamento">
+                <img src="../../assets/img/img formas de pagamento/elo-img.png" alt="elo card">
+                <img src="../../assets/img/img formas de pagamento/boleto-img.png" alt="boleto">
+            </div>
+        </div>
+
+        <div class="box3">
+            <h2> Atendimento ao cliente </h2>
+
+            <a href="#">
+                <p> Central de Ajuda </p>
+            </a>
+
+            <a href="#">
+                <p> Devolução e Reembolso </p>
+            </a>
+
+            <a href="#">
+                <p> Ouvidoria </p>
+            </a>
+        </div>
+    </footer>
+
+    <script src="../js/index.js"></script>
+    <script src="../js/carrinho.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+/* Estilização da modal */
+.containerRegistrar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #b3b2b2; /* Fundo escuro com transparência */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.box-registrarSection {
+    background-color: #fff;
+    padding: 40px;
+    width: 400px;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.containerTitleRegistrar span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.icon-fechar img {
+    width: 16px;
+    cursor: pointer;
+}
+
+.informacoesPessoais{
+    display: flex;
+    gap: 20px;
+}
+
+.style-div-inputs{
+    margin-bottom: 15px;
+}
+
+.style-div-inputs label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.style-box-input input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.div-boxSenha{
+    display: flex;
+    gap: 20px;
+}
+
+.containerBtnsRegistrar{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btnRegistrar button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: rgb(99, 197, 236);
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.box-btnsLinks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.btnEntrar button {
+    background: none;
+    border: none;
+    text-decoration: underline #999;
+    cursor: pointer;
+}
+
+.container-outrasFormaslogin {
+    margin-top: 20px;
+}
+
+.box-titleOutrasFormasRegistro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.box-titleOutrasFormasRegistro span.left, 
+.box-titleOutrasFormasRegistro span.right {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #ccc;
+    margin: 0 10px;
+}
+
+.tile-outrasFormasRegistro{
+    font-size: 14px;
+    color: #999;
+}
+
+.box-outrasFormasRegistro{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.box-outrasFormasRegistro img {
+    width: 50px;
+    cursor: pointer;
+}

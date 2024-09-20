@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+.container{
+    width: 100vw;
+    height: 100%;
+    padding: 61px 0px;
+}
+
+/* topo do site */
+header{
+    height: 63px;
+    width: 100vw;
+    justify-content: space-between;  /* Alinha os elementos ao longo do eixo principal (horizontal) */
+    align-items: center;       /* Alinha os elementos ao longo do eixo transversal (vertical) */
+    background-color: #add8e6;
+}
+
+.link-header{
+    font-size: 18px;
+    line-height: 60px;
+    margin-right: 15px;
+    text-decoration: none;
+    color: #000000;
+    margin-left: 20px;
+    font-weight: 600;    /* definir grossura da fonte */
+}
+
+.img-icon-header{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    margin-right: 30px;
+    margin-top: 20px;
+    Float:right        /* POSICIONAR ICONES NA DIREITA */
+}
+
+
+/* BANNER */
+.img-banner{
+    max-width: 100vw;
+}
+
+/* PARTE DOS PRODUTOS */
+
+.container-produtos{
+    width: 100%;
+    display: grid;
+    justify-content:center;
+    grid-template-columns: 21% 21% 21% 21%;
+    grid-template-rows: 51% 51%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px;
+    gap: 20px;
+    margin: 25px 0px;
+    margin-top: 5%;
+}
+
+.card-produtos{
+    width: 100%;
+    height: 100%;
+    color: #292828;
+    border-radius: 22px;
+    border: 2px solid #cccccc;
+    transition: .2s;
+}
+
+
+/* estilizando as informações de dentro do card*/
+.product-image{
+    width: 100%;
+    padding: 10px;
+    border-radius: 19px;
+    opacity: 0.7999;
+    margin-top: 10px;
+}
+
+.product-title{
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0px 15px;
+
+    max-height: 3em;
+    line-height: 1.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+.card-produtos h4{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.product-price, .card-produtos h4{
+    text-align: center;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.div-addCrrinho{
+    display:flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.btn-addCarrinho{
+    font-size: 13px;
+    border: 0;
+    padding: 5px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 14px;
+    margin-top: 10px;
+    border: 2px solid #cccccc;
+    background-color: #ffffff;
+}
+
+.btn-addCarrinho:hover{
+    background: #cccccc;
+}
+
+
+.rodape{
+    margin-top: 50px;
+    width: 100vw;
+    height: 12%;
+    background: #add8e6;
+}
+
+
+
+/*====----Responsividade----====*/
+
+/*@media screen and (max-width: 1020px){
+    /*----Produtos----
+    .container-produtos{
+        grid-template-rows: 25rem 25rem;
+    }
+}
+
+@media screen and (max-width: 990px){
+    /*----Produtos----
+    .container-produtos{
+        grid-template-columns: 25% 25% 25%;
+        grid-template-rows: 26rem 26rem 26rem;
+    }
+}
+
+@media screen and (max-width: 735px){
+    /*----Produtos----
+    .container-produtos{
+        grid-template-columns: 27% 27% 27%;
+        grid-template-rows: 23rem 23rem 23rem;
+    }
+}
+
+@media screen and (max-width: 635px){
+    /*----Produtos----
+    .container-produtos{
+        grid-template-columns: 35% 35%;
+        grid-template-rows: 26rem 26rem;
+    }
+}
+
+
+@media screen and (max-width: 1245px){
+    .container-produtos{
+        grid-template-rows: 29rem 29rem;
+    }
+}
+
+@media screen and (max-width: 1175px){
+    .container-produtos{
+        grid-template-rows: 28rem 28rem;
+    }
+}
+
+@media screen and (max-width: 1095px){
+    .container-produtos{
+        grid-template-rows: 27rem 27rem;
+    }
+}
+
+@media screen and (max-width: 1095px){
+    .container-produtos{
+        grid-template-rows: 27rem 27rem;
+    }
+}*/
+
+
+@media screen and (max-width: 985px){
+    .container-produtos{
+        grid-template-columns: 27% 27% 27%;
+        grid-template-rows: 34% 34% 34%;
+    }
+}
+
+@media screen and (max-width: 665px){
+    .container-produtos{
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 25% 25% 25% 25%;
+    }
+}
+
+@media screen and (max-width: 445px){
+    .container-produtos{
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 25% 25% 25% 25%;
+    }
+}

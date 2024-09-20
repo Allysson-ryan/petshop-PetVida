@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./formBanhoTosa.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <title> Agendamento Banho e tosa</title>
+</head>
+
+<body>
+    <header>
+        <a href="../page/BanhoTosa.html">
+            <div class="icon-fechar">
+                <img src="../../assets/icons/cruz.png" alt=" fechar icon">
+                <p> Fechar </p>
+            </div>
+        </a>
+    </header>
+
+    <form>
+        <div class="container-Formulario">
+            <div class="formulario-1">
+                <div id="meuFormulario">
+                    <!--dados do tutor-->
+                    <h4> Dados do Tutor </h4>
+                    <div class="container-input-nomeTutor">
+                        <label for="Nome"> Nome do tutor </label>
+                        <div class="box-input-nomeTutor">
+                            <input type="text" placeholder="Nome Completo" name="name" required>
+                        </div>
+                    </div>
+
+                    <div class="contatos-tutor">
+                        <div class="container-input-email">
+                            <label for="email"> Email </label>
+                            <div class="box-input-email">
+                                <input type="email" name="email" placeholder="exemplo@gmail.com" required>
+                            </div>
+                        </div>
+
+                        <div class="container-input-numero">
+                            <label for="phone">Número de Celular</label>
+                            <div class="box-input-telefone">
+                                <input type="tel" id="phone" name="phone" placeholder="Digite seu telefone"
+                                onkeydown="return mascaraTelefone(event)" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--dados do animal-->
+                    <h4> Dados do Animal </h4>
+                    <div class="container-input-nomeAnimal">
+                        <label for="name Animal"> Nome do Animal </label>
+                        <div class="box-input-nomeAnimal">
+                            <input type="text" placeholder="Nome" name="name Animal" required>
+                        </div>
+                    </div>
+                    <div class="tipo-animal">
+                        <div class="input-gato">
+                            <input type="checkbox" name="gato" value="Gato" id="tipoGato">
+                            <label for="gato"> Gato </label>
+                        </div>
+                        <div class="input-cachorro">
+                            <input type="checkbox" name="cachorro" value="Cachorro" id="tipoCachorro">
+                            <label for="cachorro"> Cachorro </label>
+                        </div>
+                    </div>
+                    <div class="escolha-de-raca">
+                        <select name="raça de cachorro" class="dog-options">
+                            <option value="" selected disabled> Raça do cachorro </option>
+                        </select>
+
+                        <select name="raça de gato" class="cat-options">
+                            <option value="" selected disabled> Raça do gato </option>
+                        </select>
+                    </div>
+                    <h4> Escolha os serviços </h4>
+
+                    <!--banho-->
+                    <div class="box-banho servicos_form">
+                        <div class="container-left-banho">
+                            <div class="procedimento">
+                                <h1> Banho </h1>
+                                <div class="tempo-do-procedimento">
+                                    <img src="../../assets/icons/relogio.png" alt="relógio icon">
+                                    <p class="tempo-estimado"> 40 </p>
+                                    <p class="unidade-de-tempo"> min </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container-right-banho">
+                            <div class="valor-banho">
+                                <span class="service-price"> R$ 87,90 </span>
+                            </div>
+                        </div>
+                        <div class="container-adicionar-servico">
+                            <img src="/assets/icons/check-icon.png" alt="check icon">
+                        </div>
+                    </div>
+
+                    <!--aviso-->
+                    <div class="box-aviso">
+                        <div class="aviso">
+                            <img src="../../assets/icons/informacao-icon.png" alt="informação icon">
+                            <p> O tempo de cada serviço é aproximado. Para realizar <b>tosa e tonalizante, o banho é
+                                    obrigatório</b> </p>
+                        </div>
+                    </div>
+
+                    <!--tonalizante-->
+                    <div class="title-tonalizante">
+                        <img src="../../assets/icons/tonalizante-icon.png" alt="tonalizante icon">
+                        <h4> Tonalizante </h4>
+                    </div>
+
+                    <div class="box-tonalizante servicos_form">
+                        <div class="container-left-banho">
+                            <div class="procedimento">
+                                <h1> Para pet de pelos brancos </h1>
+                                <div class="tempo-do-procedimento">
+                                    <img src="../../assets/icons/relogio.png" alt="relógio icon">
+                                    <p class="tempo-estimado"> 40 </p>
+                                    <p class="unidade-de-tempo"> min </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container-right-banho">
+                            <div class="valor-banho">
+                                <span class="service-price"> R$ 37,90 </span>
+                            </div>
+                        </div>
+
+                        <div class="container-adicionar-servico">
+                            <button class="btn-add-servico" type="button">
+                                <img src="../../assets/icons/add-quadrado.png" alt="add icon" class="addServico-icon">
+                            </button>
+                        </div>
+                    </div>
+
+                    <!--tosa-->
+                    <div class="title-tosa">
+                        <img src="../../assets/icons/tesoura.png" alt="tesoura tosa icon">
+                        <h4> Tosa </h4>
+                    </div>
+                    <div class="container-tosa">
+                        <!--REMOÇÃO DE SUBPELO-->
+                        <div class="box-tosa tirar-subpelos servicos_form">
+                            <div class="container-left-tosa">
+                                <div class="procedimento">
+                                    <h1> remover subpelos </h1>
+                                    <div class="tempo-do-procedimento">
+                                        <img src="../../assets/icons/relogio.png" alt="relógio icon">
+                                        <p class="tempo-estimado"> 40 </p>
+                                        <p class="unidade-de-tempo"> min </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container-right-tosa">
+                                <div class="valor-tirarSubpelo">
+                                    <span class="service-price"> R$ 37,90 </span>
+                                </div>
+                            </div>
+                            <div class="container-adicionar-servico">
+                                <button class="btn-add-servico" type="button">
+                                    <img src="../../assets/icons/add-quadrado.png" alt="add icon" class="addServico-icon">
+                                </button>
+                            </div>
+                        </div>
+
+                        <!--TOSA TESOURA-->
+                        <div class="box-tosa tosaTesoura servicos_form">
+                            <div class="container-left-tosa">
+                                <div class="procedimento">
+                                    <h1> Tosa tesoura </h1>
+                                    <div class="tempo-do-procedimento">
+                                        <img src="../../assets/icons/relogio.png" alt="relógio icon">
+                                        <p class="tempo-estimado"> 40 </p>
+                                        <p class="unidade-de-tempo"> min </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container-right-tosa">
+                                <div class="valor-tosaTesoura">
+                                    <span class="service-price"> R$ 37,90 </span>
+                                </div>
+                            </div>
+
+                            <div class="container-adicionar-servico">
+                                <button class="btn-add-servico" type="button">
+                                    <img src="../../assets/icons/add-quadrado.png" alt="add icon" class="addServico-icon">
+                                </button>
+                            </div>
+                        </div>
+
+                        <!--TOSA HIGIÊNICA-->
+                        <div class="box-tosa tosaHigienica servicos_form">
+                            <div class="container-left-tosa">
+                                <div class="procedimento">
+                                    <h1> Tosa higiênica </h1>
+                                    <div class="tempo-do-procedimento">
+                                        <img src="../../assets/icons/relogio.png" alt="relógio icon">
+                                        <p class="tempo-estimado"> 40 </p>
+                                        <p class="unidade-de-tempo"> min </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container-right-tosa">
+                                <div class="valor-tosaHigienica">
+                                    <span class="service-price"> R$ 37,90 </span>
+                                </div>
+                            </div>
+
+                            <div class="container-adicionar-servico">
+                                <button class="btn-add-servico" type="button">
+                                    <img src="../../assets/icons/add-quadrado.png" alt="add icon" class="addServico-icon">
+                                </button>
+                            </div>
+                        </div>
+
+                        <!--TOSA MÁQUINA-->
+                        <div class="box-tosa tosaMaquina servicos_form">
+                            <div class="container-left-tosa">
+                                <div class="procedimento">
+                                    <h1> Tosa máquina </h1>
+                                    <div class="tempo-do-procedimento">
+                                        <img src="../../assets/icons/relogio.png" alt="relógio icon">
+                                        <p class="tempo-estimado"> 40 </p>
+                                        <p class="unidade-de-tempo"> min </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container-right-tosa">
+                                <div class="valor-tosaMaquina">
+                                    <span class="service-price"> R$ 37,90 </span>
+                                </div>
+                            </div>
+                            <div class="container-adicionar-servico">
+                                <button class="btn-add-servico" type="button">
+                                    <img src="../../assets/icons/add-quadrado.png" alt="add icon" class="addServico-icon">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="titulo-form4" style="font-family: Quicksand, sans-serif; font-size: 29px;">
+                        <h4> Escolha a data e horário </h4>
+                    </div>
+
+                    <!----calendário---->
+                    <div class="calendario">
+                        <div class="wrapper">
+                            <header class="title-calendar">
+                            <p class="current-date"></p>
+                            <div class="icons">
+                                <span id="prev" class="material-symbols-rounded">chevron_left</span>
+                                <span id="next" class="material-symbols-rounded">chevron_right</span>
+                            </div>
+                            </header>
+                            <div class="calendar">
+                            <ul class="weeks">
+                                <li>Dom</li>
+                                <li>Seg</li>
+                                <li>Ter</li>
+                                <li>Qua</li>
+                                <li>Qui</li>
+                                <li>Sex</li>
+                                <li>Sab</li>
+                            </ul>
+                            <ul class="days"></ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box-horarios">
+                        <div class="horarios">
+                            <select name="horario" class="optioHorarioFuncionamento" id="horarioSelect">
+                                <option value="escolha um horário" selected disabled> escolha um horário </option>
+                                <option value="08:00am"> 08:00am </option>
+                                <option value="09:00am"> 09:00am</option>
+                                <option value="10:00pm"> 10:00pm </option>
+                                <option value="14:00pm"> 14:00pm </option>
+                                <option value="15:00pm"> 15:00pm </option>
+                                <option value="16:00pm"> 16:00pm </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!------Resumo do agendamento------>
+                <div class="container-resumoDoAgendamento" style="margin-bottom: 5rem;">
+                    <h1 class="title-resumoDoAgendamento"> Resumo do agendamento </h1>
+                    <div class="container-detalhes">
+                        <div class="titleDetalhes">
+                            <h3> Detralhes </h3>
+                        </div>
+                        <div class="box-detalhe">
+                            <div class="box-data-escolhida">
+                                <div class="title-data-escolhida">
+                                    <img src="/assets/icons/calendario.png" alt="calendario icon" style="width: 15px;">
+                                    <span>Data:</span>
+                                </div>
+                                <p class="datasEscolhida"></p>
+                            </div>
+                            <div class="box-horario-escolhido">
+                                <div class="title-horario-escolhido">
+                                    <img src="/assets/icons/relogio.png" alt="relogio icon" style="width: 15px;">
+                                    <span>Hora:</span>
+                                </div>
+                                <p class="horarioEscolhido">01:00am</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="container-servicosAgendados">
+                        <h3 class="title-servicosAgendados"> Serviços Agendados </h3>
+                        <div class="box-servicosObrigatorio">
+                            <div class="servicosAgendados">
+                                <h4 class="name-servicosobrigatorio">Banho</h4>
+                                <span class="valor-servicosObrigatorio">R$87,90</span>
+                            </div>
+                        </div>
+                        <div class="box-servicosAgendados">
+                        </div>
+                    </div>
+
+                    <div class="container-valorTotalServicos">
+                        <div class="title-resumoCompra">
+                            <span> Total:</span>
+                            <div class="valor-ResumoCompra">
+                                <span> R$00,00 </span>
+                            </div>
+                        </div>
+                        <div class="box-btnFinalizar">
+                            <a href="">
+                                <button class="btnFinalizar" id="btnFinalizar" type="submit"> Agendar </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+<!--script para numero de celular-->
+<script>
+    function mascaraTelefone(event) {
+        let tecla = event.key;
+        let telefone = event.target.value.replace(/\D+/g, "");
+
+        if (/^[0-9]$/i.test(tecla)) {
+            telefone = telefone + tecla;
+            let tamanho = telefone.length;
+
+            if (tamanho >= 12) {
+                return false;
+            }
+            
+            if (tamanho > 10) {
+                telefone = telefone.replace(/^(\d\d)(\d{5})(\d{4}).*/, "($1) $2-$3");
+            } else if (tamanho > 5) {
+                telefone = telefone.replace(/^(\d\d)(\d{4})(\d{0,4}).*/, "($1) $2-$3");
+            } else if (tamanho > 2) {
+                telefone = telefone.replace(/^(\d\d)(\d{0,5})/, "($1) $2");
+            } else {
+                telefone = telefone.replace(/^(\d*)/, "($1");
+            }
+
+            event.target.value = telefone;
+        }
+
+        if (!["Backspace", "Delete"].includes(tecla)) {
+            return false;
+        }
+    }
+</script>
+
+<script>
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", ready);
+    } else {
+        ready();
+    }
+
+    function ready() {
+        updateDisplayEscolhaRaca();
+        carregarValorTotal();
+        configurarBotoesAdicionarServico();
+        atualizarEstadoBotoes();
+        calendar()
+        //horarioEscolhido()
+        GeradorcodigoCheckin();
+        configurarBtnFinalizar()
+    }
+
+    
+
+    function updateDisplayEscolhaRaca() {
+        const dogSelect = document.getElementById("tipoCachorro");
+        const catSelect = document.getElementById("tipoGato");
+        const catOptions = document.querySelector(".escolha-de-raca .cat-options");
+        const dogOptions = document.querySelector(".escolha-de-raca .dog-options");
+
+        catSelect.addEventListener("change", () => {
+            catOptions.classList.toggle("hide");
+
+            if (catSelect.checked) {
+                dogSelect.disabled = true;
+            } else {
+                dogSelect.disabled = false;
+            }
+        });
+
+        dogSelect.addEventListener("change", () => {
+            dogOptions.classList.toggle("hide");
+
+            if (dogSelect.checked) {
+                catSelect.disabled = true;
+            } else {
+                catSelect.disabled = false;
+            }
+        });
+    }
+
+    function configurarBotoesAdicionarServico() {
+        const addServiceButtons = document.querySelectorAll('.btn-add-servico');
+
+        addServiceButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const serviceContainer = button.closest('.servicos_form');
+                const servicoPrice = parseFloat(serviceContainer.querySelector(".service-price").innerText.replace("R$", "").replace(",", "."));
+                const servicoNome = serviceContainer.querySelector("h1").innerText;
+
+                adicionarServico(servicoNome, servicoPrice, button);
+            });
+        });
+    }
+
+    function adicionarServico(nome, preco, button) {
+        let servicosAgendados = JSON.parse(localStorage.getItem('servicosAgendados')) || [];
+
+        if (!servicosAgendados.some(servico => servico.nome === nome)) {
+            servicosAgendados.push({ nome, preco });
+            localStorage.setItem('servicosAgendados', JSON.stringify(servicosAgendados));
+
+            // Recalcular o valor total após adicionar um serviço
+            recalcularValorTotal();
+
+            // Atualiza o botão com o ícone de check
+            button.disabled = true;
+            button.innerHTML = '<img src="/assets/icons/check-icon.png" alt="check icon" class="addServico-icon">';
+
+            // Atualiza a lista de serviços agendados
+            atualizarListaServicosAgendados();
+        }
+    }
+
+    function removerServico(nome, preco) {
+        let servicosAgendados = JSON.parse(localStorage.getItem('servicosAgendados')) || [];
+
+        // Filtra para remover o serviço
+        servicosAgendados = servicosAgendados.filter(servico => servico.nome !== nome);
+        localStorage.setItem('servicosAgendados', JSON.stringify(servicosAgendados));
+
+        // Recalcular o valor total após remover um serviço
+        recalcularValorTotal();
+
+        // Reativar o botão de adicionar serviço
+        const button = Array.from(document.querySelectorAll('.servicos_form')).find(form => form.querySelector('h1').innerText === nome)?.querySelector('.btn-add-servico');
+        if (button) {
+            button.disabled = false;
+            button.innerHTML = '<img src="/assets/icons/add-quadrado.png" alt="add icon" class="addServico-icon">';
+        }
+
+        // Atualiza a lista de serviços agendados
+        atualizarListaServicosAgendados();
+    }
+
+    function recalcularValorTotal() {
+        let servicosAgendados = JSON.parse(localStorage.getItem('servicosAgendados')) || [];
+        let valorTotal = 87.9;
+
+        // Sempre incluir o valor do serviço obrigatório (banho)
+        const servicoObrigatorio = servicosAgendados.find(servico => servico.nome === 'Banho');
+        if (servicoObrigatorio) {
+            valorTotal += servicoObrigatorio.preco;
+        }
+
+        // Somar o valor de todos os serviços, exceto o serviço obrigatório (para evitar duplicação)
+        servicosAgendados.forEach(servico => {
+            if (servico.nome !== 'Banho') {
+                valorTotal += servico.preco;
+            }
+        });
+
+        localStorage.setItem('valorTotal', valorTotal.toFixed(2));
+
+        // Atualiza o total na interface
+        document.querySelector(".valor-ResumoCompra span").innerText = `R$ ${valorTotal.toFixed(2).replace(".", ",")}`;
+    }
+
+    function carregarValorTotal() {
+        recalcularValorTotal(); // Garante que o valor total seja calculado corretamente
+
+        // Carrega a lista de serviços agendados
+        atualizarListaServicosAgendados();
+    }
+
+    function atualizarListaServicosAgendados() {
+        const listaServicosAgendados = document.querySelector(".box-servicosAgendados");
+        listaServicosAgendados.innerHTML = ''; // Limpa a lista
+
+        const servicosAgendados = JSON.parse(localStorage.getItem('servicosAgendados')) || [];
+
+        servicosAgendados.forEach(servico => {
+            const servicoElement = document.createElement('div');
+            servicoElement.className = 'servicosAgendados';
+            servicoElement.innerHTML = `
+                <h4 class="name-servicosAgendados">${servico.nome}</h4>
+                <span class="valor-servicosAgendados">R$ ${servico.preco.toFixed(2).replace(".", ",")}</span>
+                <div class="box-excluirServico">
+                    <button class="btn-excluirServico" style="border: none; background: none;">
+                        <img src="/assets/icons/lixo.png" alt="lixeira icon" style="width: 13px;">
+                    </button>
+                </div>
+            `;
+
+            // Adiciona o evento de remoção do serviço
+            servicoElement.querySelector('.btn-excluirServico').addEventListener('click', function() {
+                removerServico(servico.nome, servico.preco);
+            });
+
+            listaServicosAgendados.appendChild(servicoElement);
+        });
+    }
+
+    function calendar() {
+            const daysTag = document.querySelector(".days"),
+                currentDate = document.querySelector(".current-date"),
+                prevNextIcon = document.querySelectorAll(".icons span"),
+                datasEscolhida = document.querySelector(".datasEscolhida");
+
+            let date = new Date(),
+                currYear = date.getFullYear(),
+                currMonth = date.getMonth(),
+                today = date.getDate();
+
+            const months = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho",
+                "Agosto", "Setembro", "Otubro", "Novembro", "Dezenbro"];
+            
+            const weekDays = ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sabado"];
+
+            const renderCalendar = () => {
+                let firstDayofMonth = new Date(currYear, currMonth, 1).getDay(),
+                    lastDateofMonth = new Date(currYear, currMonth + 1, 0).getDate(),
+                    lastDayofMonth = new Date(currYear, currMonth, lastDateofMonth).getDay(),
+                    lastDateofLastMonth = new Date(currYear, currMonth, 0).getDate();
+
+                let liTag = "";
+
+                for (let i = firstDayofMonth; i > 0; i--) {
+                    liTag += `<li class="inactive">${lastDateofLastMonth - i + 1}</li>`;
+                }
+
+                for (let i = 1; i <= lastDateofMonth; i++) {
+                    let isToday = i === today && currMonth === new Date().getMonth()
+                        && currYear === new Date().getFullYear() ? "active" : "";
+                    
+                    let currentDay = new Date(currYear, currMonth, i).getDay();
+
+                    // Verificando se é um dia anterior ao dia atual ou se é sábado/domingo
+                    let isInactive = (i < today && currMonth === new Date().getMonth() && currYear === new Date().getFullYear()) || currentDay === 0 || currentDay === 6 ? "inactive" : "";
+
+                    liTag += `<li class="${isToday} ${isInactive}">${i}</li>`;
+                }
+
+                for (let i = lastDayofMonth; i < 6; i++) {
+                    liTag += `<li class="inactive">${i - lastDayofMonth + 1}</li>`;
+                }
+
+                currentDate.innerText = `${months[currMonth]} ${currYear}`;
+                daysTag.innerHTML = liTag;
+
+                // Adicionando evento de clique para capturar a data selecionada
+                const days = document.querySelectorAll(".days li:not(.inactive)");
+                days.forEach(day => {
+                    day.addEventListener("click", (e) => {
+                        const selectedDay = parseInt(e.target.innerText);
+                        const selectedDate = new Date(currYear, currMonth, selectedDay);
+                        const dayOfWeek = weekDays[selectedDate.getDay()];
+                        const formattedDate = `${dayOfWeek}, ${("0" + selectedDay).slice(-2)}/${("0" + (currMonth + 1)).slice(-2)}/${currYear}`;
+                        datasEscolhida.innerText = formattedDate;
+                    });
+                });
+            }
+
+        renderCalendar();
+
+        prevNextIcon.forEach(icon => {
+            icon.addEventListener("click", () => {
+                currMonth = icon.id === "prev" ? currMonth - 1 : currMonth + 1;
+                if (currMonth < 0 || currMonth > 11) {
+                    date = new Date(currYear, currMonth, new Date().getDate());
+                    currYear = date.getFullYear();
+                    currMonth = date.getMonth();
+                } else {
+                    date = new Date();
+                }
+                renderCalendar();
+            });
+        });
+    }
+
+    function atualizarEstadoBotoes() {
+        const servicosAgendados = JSON.parse(localStorage.getItem('servicosAgendados')) || [];
+
+        servicosAgendados.forEach(servico => {
+            const button = Array.from(document.querySelectorAll('.servicos_form')).find(form => form.querySelector('h1').innerText === servico.nome)?.querySelector('.btn-add-servico');
+
+            if (button) {
+                button.disabled = true;
+                button.innerHTML = '<img src="/assets/icons/check-icon.png" alt="check icon" class="addServico-icon">';
+            }
+        });
+    }
+
+</script>
+
+</html>
