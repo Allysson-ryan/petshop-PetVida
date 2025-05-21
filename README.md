@@ -5,17 +5,14 @@ Este projeto é um site de petshop que estou desenvolvendo desde o início dos m
 
 
 ## Próximas etapas de desenvolvimento do projeto
-* Funcionalidade da barra de busca;
 * Resposividade da página de detalhes do produto;
 * Fazer algumas funcionalidades da página de detalhes do produto;
 * Responsividade da página de banho e tosa;
 * Responsividade do formulário banho e tosa;
 * Responsividade da página de consultas;
-* funcionalidades do formulário de consultas com javascript;
 * Responsividade do formulário consultas;
 * Fazer a página de hospedagem de pets;
 * Responsividade do carrinho;
-* Sistema de entrar e registrar com ultilização de bancos de dados e outras linguagens.
 
 ## Funcionalidades
 * Compra de produtos para pets, como brinquedos, acessórios, ração para gatos e cachorros
